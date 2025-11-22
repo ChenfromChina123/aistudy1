@@ -1,0 +1,6 @@
+1、在database文件夹里面创建一个data文件夹，确保data文件夹为空。
+2、在mysql实例文件夹中注册服务器：mysqld --install [服务器名称]
+3、初始化mysql：mysqld --defaults-file="[SQL实例配置文件.ini地址]" --initialize --console（需记住此时的密码 ）
+4、启动服务器：net start [服务器名称]
+5、打开指定端口服务器：mysql -h localhost -P [端口名称，默认为:3306] -u root -p （填入初始化密码）
+6、重置密码：alter user 'root'@'localhost' identified by '[重置的密码]'

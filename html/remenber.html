@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>NeuroFlow V3.1 | 移动端优化</title>
+    <style>
+        :root {
+            --bg-color: #121212;
+            --card-bg: #1e1e1e;
+            --text-main: #e0e0e0;
+            --text-sub: #757575;
+            --accent: #00d4ff;
+            --danger: #ff4757;
+            --success: #2ed573;
+            --font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            --card-border: #333;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+        
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: var(--font-main);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        /* 顶部状态栏：增加填充，避免被手机状态栏和浏览器地址栏遮挡 */
+        .header {
+            padding: 15px;
+            padding-top: 40px; /* 强制增加顶部填充 */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+            color: var(--text-sub);
+            background: var(--bg-color);
+            z-index: 10;
+        }
+
+        .header-left button { margin-right: 10px; }
+
+        .btn-text {
+            background: none;
+            border: 1px solid #444;
+            color: var(--text-sub);
+            padding: 6px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 12px;
+            transition: all 0.2s;
+        }
+        .btn-text:hover { border-color: var(--text-main); color: var(--text-main); }
+
+        .card-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            perspective: 1000px;
+        }
+
+        .card-surface {
+            background: var(--card-bg);
+            width: 100%;
+            max-width: 600px;
+            padding: 40px 20px;
+            border-radius: 24px;
+            border: 2px solid var(--card-border);
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 300px;
+        }
+
+        .feedback-pass { border-color: var(--success); box-shadow: 0 0 20px rgba(46, 213, 115, 0.25); }
+        .feedback-fail { border-color: var(--danger); box-shadow: 0 0 20px rgba(255, 71, 87, 0.25); }
+
+        .word-area {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .word {
+            font-size: clamp(2rem, 7vw, 3.5rem);
+            font-weight: 700;
+            line-height: 1.2;
+            color: var(--text-main);
+            letter-spacing: 0.5px;
+        }
+
+        .audio-btn {
+            background: none;
+            border: none;
+            color: var(--accent);
+            font-size: clamp(1.5rem, 5vw, 2.5rem);
+            cursor: pointer;
+            transition: color 0.1s;
+        }
+        .audio-btn:active { color: #fff; }
+
+        .phonetic {
+            font-size: clamp(1rem, 4vw, 1.4rem);
+            color: var(--accent);
+            font-family: "Lucida Sans Unicode", "Arial Unicode MS", monospace;
+            margin-bottom: 25px;
+            font-weight: 400;
+            background: #252525;
+            padding: 4px 12px;
+            border-radius: 12px;
+            display: inline-block;
+        }
+
+        .definition-group {
+            max-width: 90%;
+            color: #cfcfcf;
+            transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .definition-main {
+            font-size: clamp(1.1rem, 4vw, 1.6rem);
+            line-height: 1.6;
+            opacity: 0;
+            transform: translateY(10px);
+        }
+        
+        .definition-context {
+            margin-top: 15px;
+            font-size: clamp(0.9rem, 3.5vw, 1.2rem);
+            color: var(--text-sub);
+            font-style: italic;
+            border-top: 1px solid #2c2c2c;
+            padding-top: 10px;
+            opacity: 0;
+            transform: translateY(10px);
+        }
+
+        .definition-main.visible { opacity: 1; transform: translateY(0); }
+        .definition-context.visible { opacity: 1; transform: translateY(0); transition-delay: 0.1s; }
+
+
+        /* 底部操作区：显著增加底部填充，确保按钮在手机底栏上方 */
+        .controls {
+            padding: 20px 20px;
+            padding-bottom: 80px; /* 关键修复：确保按钮在浏览器导航栏上方 */
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            max-width: 600px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .btn {
+            border: none;
+            padding: 20px 0;
+            border-radius: 16px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            color: #fff;
+            transition: transform 0.1s;
+        }
+
+        .btn:active { transform: scale(0.97); }
+        .btn-reveal {
+            grid-column: 1 / -1;
+            background: #2c2c2c;
+            color: var(--text-main);
+            border: 1px solid #444;
+        }
+        .btn-fail { background-color: rgba(255, 71, 87, 0.15); color: var(--danger); border: 1px solid var(--danger); }
+        .btn-pass { background-color: rgba(46, 213, 115, 0.15); color: var(--success); border: 1px solid var(--success); }
+        
+        .hidden { display: none !important; }
+
+        /* 通用模态框 */
+        .modal {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.85);
+            backdrop-filter: blur(5px);
+            z-index: 100;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .modal-content {
+            background: #1e1e1e;
+            padding: 25px;
+            border-radius: 16px;
+            width: 100%;
+            max-width: 550px;
+            max-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            border: 1px solid #333;
+            /* 确保内容不会被底部的安全区遮挡 */
+            padding-bottom: 40px; 
+        }
+
+        .modal-header { font-weight: bold; color: var(--text-main); font-size: 18px;}
+        .btn-save { background: var(--success); color: #000; padding: 12px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer;}
+        .format-hint { font-size: 13px; color: var(--text-sub); line-height: 1.4; }
+        
+        /* 导入区 */
+        textarea {
+            background: #121212;
+            color: #ddd;
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 15px;
+            height: 180px;
+            resize: none;
+            font-family: monospace;
+            line-height: 1.5;
+        }
+        textarea:focus { outline: 1px solid var(--accent); }
+
+        /* 词汇管理区 */
+        .word-list-container {
+            overflow-y: auto;
+            flex-grow: 1;
+        }
+        .word-list {
+            list-style: none;
+        }
+        .word-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #2c2c2c;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+        }
+        .word-list li:last-child { border-bottom: none; }
+        .word-list .term-display { 
+            color: var(--text-main); 
+            font-weight: 600; 
+            flex-grow: 1; 
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .delete-btn {
+            background: none;
+            border: 1px solid var(--danger);
+            color: var(--danger);
+            padding: 4px 8px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 10px;
+            margin-left: 10px;
+        }
+        
+        /* 复选框样式 */
+        .word-checkbox {
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+            accent-color: var(--accent);
+        }
+        
+        /* 批量操作按钮 */
+        .batch-actions {
+            display: flex;
+            gap: 10px;
+            padding: 10px 15px;
+            background: #252525;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            align-items: center;
+        }
+        .batch-actions label {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 13px;
+            color: var(--text-main);
+            cursor: pointer;
+        }
+        .batch-delete-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+        }
+        .batch-delete-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+        }
+        .batch-delete-btn:active {
+            transform: translateY(0);
+        }
+        .batch-delete-btn:disabled {
+            background: #333;
+            opacity: 0.5;
+            cursor: not-allowed;
+            box-shadow: none;
+        }
+        .selected-count {
+            font-size: 12px;
+            color: var(--text-sub);
+            margin-left: auto;
+        }
+        
+        /* 分组样式 */
+        .group-header {
+            padding: 12px 15px;
+            background: #252525;
+            border-left: 3px solid var(--accent);
+            margin: 10px 0 5px 0;
+            font-weight: 600;
+            color: var(--accent);
+            font-size: 13px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 4px;
+        }
+        .group-header .group-count {
+            font-size: 11px;
+            color: var(--text-sub);
+            font-weight: normal;
+        }
+        .group-items {
+            margin-bottom: 15px;
+        }
+        .group-items li {
+            padding-left: 10px;
+        }
+
+        /* 顶部进度 */
+        .progress-container { width: 100%; height: 2px; background: #222; }
+        .progress-bar { height: 100%; background: var(--accent); width: 0%; transition: width 0.3s; }
+
+    </style>
+</head>
+<body>
+
+    <div class="progress-container"><div class="progress-bar" id="progress"></div></div>
+
+    <div class="header">
+        <div class="header-left">
+            <button class="btn-text" onclick="openDeckManager()">管理词库</button>
+            <button class="btn-text" onclick="openImport()">导入单词</button>
+        </div>
+        <span id="stats">Ready</span>
+    </div>
+
+    <div class="card-container" id="cardArea">
+        <div class="card-surface" id="cardSurface">
+            <div class="word-area">
+                <div class="word" id="word">NeuroFlow V3.1</div>
+                <button class="audio-btn" id="audioBtn" onclick="speakWord(currentCard.term)" title="播放发音">🔊</button>
+            </div>
+            
+            <div class="phonetic hidden" id="phonetic">/njuːroʊ floʊ/</div>
+            
+            <div class="definition-group">
+                <div class="definition-main" id="definitionMain">
+                    已修复移动端操作区域。<br><br>
+                    请检查顶部和底部的按钮是否都能正常点击。
+                </div>
+                <div class="definition-context" id="definitionContext">
+                    （例句/情景记忆区）
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="controls">
+        <button class="btn btn-reveal" id="btnReveal" onclick="reveal()">查看释义 (Space)</button>
+        <button class="btn btn-fail hidden" id="btnFail" onclick="rate(false)">忘记 (1)</button>
+        <button class="btn btn-pass hidden" id="btnPass" onclick="rate(true)">认识 (2)</button>
+    </div>
+
+    <div class="modal hidden" id="importModal">
+        <div class="modal-content">
+            <div class="modal-header">导入单词</div>
+            <div class="format-hint">
+                **格式：** 单词 [音标] 释义 **||** 例句/情景 (使用 **||** 分割主释义和例句)<br>
+                例如：<br>
+                <i>ephemeral /iˈfɛmərəl/ 短暂的；朝生暮死的 **||** The fashion was ephemeral.</i>
+            </div>
+            <textarea id="importText" placeholder="在此粘贴你的单词列表..."></textarea>
+            <button class="btn-save" onclick="saveWords()">识别并导入</button>
+            <button class="btn-text" onclick="closeModal('importModal')" style="margin-top:5px; text-align:center; border:none;">取消</button>
+        </div>
+    </div>
+
+    <div class="modal hidden" id="deckManagerModal">
+        <div class="modal-content">
+            <div class="modal-header">词汇管理中心</div>
+            <div style="padding: 0 15px; margin-bottom: 10px;">
+                <label style="color: var(--text-sub); font-size: 12px; margin-right: 10px;">分组方式：</label>
+                <select id="groupBySelect" onchange="renderDeckList()" style="background: #252525; color: var(--text-main); border: 1px solid #444; padding: 5px 10px; border-radius: 6px; cursor: pointer;">
+                    <option value="time">按添加时间</option>
+                    <option value="none">不分组</option>
+                </select>
+            </div>
+            <div style="padding: 0 15px;">
+                <div class="batch-actions">
+                    <label>
+                        <input type="checkbox" id="selectAllCheckbox" class="word-checkbox" onchange="toggleSelectAll()">
+                        <span>全选</span>
+                    </label>
+                    <button class="batch-delete-btn" id="batchDeleteBtn" onclick="batchDeleteWords()" disabled>删除选中</button>
+                    <span class="selected-count" id="selectedCount">已选择 0 个</span>
+                </div>
+            </div>
+            <div class="word-list-container">
+                <div id="deckList"></div>
+            </div>
+            <button class="btn-text" onclick="closeModal('deckManagerModal')" style="margin-top:5px; text-align:center;">关闭</button>
+        </div>
+    </div>
+
+
+    <script>
+        let deck = [];
+        let currentCard = null;
+        let isRevealed = false;
+        let selectedWords = new Set(); // 存储选中的单词ID
+        
+        const speech = window.speechSynthesis;
+        
+        // 使用 localStorage 存储数据（无需认证）
+        function saveData() {
+            localStorage.setItem('neuroflow_deck_v3', JSON.stringify(deck));
+        }
+        
+        // 更新选中计数和按钮状态
+        function updateSelectionUI() {
+            const count = selectedWords.size;
+            const countSpan = document.getElementById('selectedCount');
+            const deleteBtn = document.getElementById('batchDeleteBtn');
+            const selectAllCheckbox = document.getElementById('selectAllCheckbox');
+            
+            if (countSpan) countSpan.textContent = `已选择 ${count} 个`;
+            if (deleteBtn) deleteBtn.disabled = count === 0;
+            
+            // 更新全选复选框状态
+            if (selectAllCheckbox && deck.length > 0) {
+                selectAllCheckbox.checked = count === deck.length;
+                selectAllCheckbox.indeterminate = count > 0 && count < deck.length;
+            }
+        }
+        
+        // 切换全选
+        function toggleSelectAll() {
+            const selectAllCheckbox = document.getElementById('selectAllCheckbox');
+            if (selectAllCheckbox.checked) {
+                // 全选
+                selectedWords.clear();
+                deck.forEach(card => selectedWords.add(card.id));
+            } else {
+                // 取消全选
+                selectedWords.clear();
+            }
+            renderDeckList();
+        }
+        
+        // 切换单个单词选中状态
+        function toggleWordSelection(id) {
+            if (selectedWords.has(id)) {
+                selectedWords.delete(id);
+            } else {
+                selectedWords.add(id);
+            }
+            updateSelectionUI();
+        }
+        
+        // 批量删除单词
+        function batchDeleteWords() {
+            if (selectedWords.size === 0) return;
+            
+            if (confirm(`确定要删除选中的 ${selectedWords.size} 个单词吗？`)) {
+                deck = deck.filter(c => !selectedWords.has(c.id));
+                
+                // 如果当前卡片被删除，加载下一张
+                if (currentCard && selectedWords.has(currentCard.id)) {
+                    currentCard = null;
+                    nextCard();
+                }
+                
+                selectedWords.clear();
+                saveData();
+                renderDeckList();
+            }
+        }
+
+        function init() {
+            const stored = localStorage.getItem('neuroflow_deck_v3');
+            if (stored) {
+                try {
+                    deck = JSON.parse(stored);
+                } catch (e) {
+                    console.error('加载数据失败', e);
+                    deck = [];
+                }
+            } else {
+                deck = [];
+            }
+            nextCard();
+        }
+
+        function nextCard() {
+            const now = Date.now();
+            let dueCards = deck.filter(c => c.nextReview <= now);
+            
+            if (dueCards.length === 0) {
+                if (deck.length === 0) {
+                    document.getElementById('word').innerText = "词库为空";
+                    document.getElementById('definitionMain').innerHTML = "请点击“导入单词”开始。";
+                    document.getElementById('definitionContext').innerHTML = "";
+                    document.getElementById('audioBtn').classList.add('hidden');
+                    updateStats();
+                    return;
+                }
+                // 无待复习卡片，显示下次复习时间
+                deck.sort((a, b) => a.nextReview - b.nextReview);
+                const nextTime = new Date(deck[0].nextReview);
+                
+                document.getElementById('word').innerText = "复习完成";
+                document.getElementById('definitionMain').innerHTML = `下次复习时间：<br>${nextTime.toLocaleString()}`;
+                document.getElementById('definitionContext').innerHTML = "";
+                document.getElementById('audioBtn').classList.add('hidden');
+                
+                document.getElementById('btnReveal').classList.add('hidden');
+                document.getElementById('btnFail').classList.add('hidden');
+                document.getElementById('btnPass').classList.add('hidden');
+                
+                updateStats();
+                currentCard = null;
+            } else {
+                dueCards.sort((a, b) => a.interval - b.interval);
+                const index = Math.floor(Math.random() * Math.min(dueCards.length, 5)); 
+                currentCard = dueCards[index];
+                
+                document.getElementById('audioBtn').classList.remove('hidden');
+                renderCard();
+                updateStats();
+            }
+        }
+
+        function renderCard() {
+            isRevealed = false;
+            document.getElementById('word').innerText = currentCard.term;
+            
+            const pho = document.getElementById('phonetic');
+            if (currentCard.phonetic && currentCard.phonetic.trim() !== "") {
+                pho.innerText = currentCard.phonetic;
+                pho.classList.remove('hidden');
+            } else {
+                pho.classList.add('hidden');
+            }
+
+            // 组合词性和释义
+            let defText = currentCard.definition;
+            if (currentCard.part_of_speech) {
+                defText = `${currentCard.part_of_speech} ${defText}`;
+            }
+            document.getElementById('definitionMain').innerHTML = defText.replace(/\n/g, '<br>');
+            document.getElementById('definitionContext').innerHTML = currentCard.context ? `<small>例句：</small>${currentCard.context.replace(/\n/g, '<br>')}` : '';
+
+            document.getElementById('definitionMain').classList.remove('visible');
+            document.getElementById('definitionContext').classList.remove('visible');
+            
+            document.getElementById('btnReveal').classList.remove('hidden');
+            document.getElementById('btnFail').classList.add('hidden');
+            document.getElementById('btnPass').classList.add('hidden');
+            document.getElementById('cardSurface').className = 'card-surface';
+        }
+
+        function reveal() {
+            if (isRevealed || !currentCard) return;
+            
+            document.getElementById('definitionMain').classList.add('visible');
+            
+            if (currentCard.context) {
+                setTimeout(() => {
+                    document.getElementById('definitionContext').classList.add('visible');
+                }, 100); 
+            }
+
+            isRevealed = true;
+            document.getElementById('btnReveal').classList.add('hidden');
+            document.getElementById('btnFail').classList.remove('hidden');
+            document.getElementById('btnPass').classList.remove('hidden');
+            
+            speakWord(currentCard.term);
+        }
+
+        function rate(isCorrect) {
+            if (!currentCard) return;
+
+            const now = Date.now();
+            const cardSurface = document.getElementById('cardSurface');
+
+            if (isCorrect) {
+                cardSurface.classList.add('feedback-pass');
+                
+                if (currentCard.interval < 60000) {
+                    currentCard.interval = 10 * 60000;
+                } else {
+                    currentCard.interval = Math.ceil(currentCard.interval * 2.2);
+                }
+                currentCard.nextReview = now + currentCard.interval;
+            } else {
+                cardSurface.classList.add('feedback-fail');
+                
+                currentCard.interval = 10 * 1000;
+                currentCard.nextReview = now + 10000;
+            }
+
+            saveData();
+            setTimeout(() => { nextCard(); }, 200);
+        }
+
+        function updateStats() {
+            const now = Date.now();
+            const due = deck.filter(c => c.nextReview <= now).length;
+            document.getElementById('stats').innerText = `${deck.length} 词 | ${due} 待复习`;
+            
+            const mastered = deck.filter(c => c.interval > 24 * 3600 * 1000).length;
+            const percent = deck.length > 0 ? (mastered / deck.length) * 100 : 0;
+            document.getElementById('progress').style.width = `${percent}%`;
+        }
+
+        function speakWord(text) {
+            if (!speech) return;
+            if (speech.speaking) speech.cancel();
+            
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = 'en-US'; 
+            utterance.rate = 0.9;
+            speech.speak(utterance);
+        }
+
+        function saveWords() {
+            const text = document.getElementById('importText').value;
+            if (!text.trim()) return;
+
+            const lines = text.split('\n');
+            let newCount = 0;
+            
+            lines.forEach(line => {
+                line = line.trim();
+                if (!line) return;
+
+                let term = "";
+                let phonetic = "";
+                let definition = "";
+                let context = "";
+                let part_of_speech = "";
+
+                // 处理例句分割
+                const contextSplit = line.split('||').map(s => s.trim());
+                if (contextSplit.length > 1) {
+                    line = contextSplit[0];
+                    context = contextSplit[1];
+                }
+
+                // 提取音标
+                const phoneticMatch = line.match(/(\/.*?\/|\[.*?\])/);
+                if (phoneticMatch) {
+                    phonetic = phoneticMatch[0];
+                    line = line.replace(phonetic, '___PH_PH___').trim();
+                }
+
+                const parts = line.split('___PH_PH___').map(s => s.trim());
+                let mainPart = parts.join(' ').trim();
+                
+                // 尝试提取词性 (如 n. v. adj. 等)
+                const posMatch = mainPart.match(/^([a-z]{1,5}\.)\s+/);
+                if (posMatch) {
+                    part_of_speech = posMatch[1];
+                    mainPart = mainPart.substring(posMatch[0].length).trim();
+                }
+                
+                // 剩下的部分分割单词和释义
+                let splitIndex = mainPart.indexOf('\t');
+                if (splitIndex === -1) {
+                    const match = mainPart.match(/\s{2,}/); 
+                    if (match) splitIndex = match.index;
+                }
+                if (splitIndex === -1) { 
+                    splitIndex = mainPart.indexOf(' '); 
+                }
+                
+                if (splitIndex > 0) {
+                    term = mainPart.substring(0, splitIndex).trim();
+                    definition = mainPart.substring(splitIndex).trim();
+                } else {
+                    term = mainPart;
+                    definition = "未提供释义";
+                }
+
+                if (term && !deck.find(c => c.term === term)) {
+                    deck.push({
+                        id: Date.now() + Math.random(),
+                        term: term,
+                        phonetic: phonetic,
+                        part_of_speech: part_of_speech,
+                        definition: definition,
+                        context: context,
+                        nextReview: 0,
+                        interval: 0,
+                        createdAt: Date.now(), // 添加创建时间戳
+                        batchId: Date.now() // 批次ID，同一次导入的单词具有相同的批次ID
+                    });
+                    newCount++;
+                }
+            });
+
+            saveData();
+            closeModal('importModal');
+            document.getElementById('importText').value = "";
+            alert(`成功导入 ${newCount} 个单词！`);
+            nextCard();
+        }
+
+        function openDeckManager() {
+            selectedWords.clear(); // 打开时清空选择
+            renderDeckList();
+            document.getElementById('deckManagerModal').classList.remove('hidden');
+        }
+
+        function renderDeckList() {
+            const list = document.getElementById('deckList');
+            list.innerHTML = '';
+            
+            if (deck.length === 0) {
+                list.innerHTML = '<p style="color: #999; text-align: center; padding: 20px;">词库为空。</p>';
+                return;
+            }
+
+            const groupBy = document.getElementById('groupBySelect').value;
+
+            if (groupBy === 'time') {
+                // 按时间分组
+                const groups = {};
+                
+                deck.forEach(card => {
+                    const createdAt = card.createdAt || card.id; // 使用 createdAt 或 id 作为时间戳
+                    const date = new Date(createdAt);
+                    const dateKey = date.toLocaleDateString('zh-CN', { year: 'numeric', month: '2-digit', day: '2-digit' });
+                    
+                    if (!groups[dateKey]) {
+                        groups[dateKey] = {
+                            timestamp: createdAt,
+                            cards: []
+                        };
+                    }
+                    groups[dateKey].cards.push(card);
+                });
+
+                // 按日期排序（最新的在前）
+                const sortedGroups = Object.entries(groups).sort((a, b) => b[1].timestamp - a[1].timestamp);
+
+                sortedGroups.forEach(([dateKey, group]) => {
+                    // 创建分组标题
+                    const groupHeader = document.createElement('div');
+                    groupHeader.className = 'group-header';
+                    groupHeader.innerHTML = `
+                        <span>${dateKey}</span>
+                        <span class="group-count">${group.cards.length} 个单词</span>
+                    `;
+                    list.appendChild(groupHeader);
+
+                    // 创建分组内容容器
+                    const groupItems = document.createElement('ul');
+                    groupItems.className = 'word-list group-items';
+                    
+                    // 组内按字母排序
+                    const sortedCards = group.cards.sort((a, b) => a.term.localeCompare(b.term));
+                    
+                    sortedCards.forEach(card => {
+                        const li = document.createElement('li');
+                        const p = document.createElement('span');
+                        const btn = document.createElement('button');
+                        
+                        p.classList.add('term-display');
+                        
+                        // 添加复选框
+                        const checkbox = document.createElement('input');
+                        checkbox.type = 'checkbox';
+                        checkbox.className = 'word-checkbox';
+                        checkbox.checked = selectedWords.has(card.id);
+                        checkbox.onchange = () => toggleWordSelection(card.id);
+                        
+                        const textSpan = document.createElement('span');
+                        let defShow = card.definition || '';
+                        if (card.part_of_speech) defShow = `${card.part_of_speech} ${defShow}`;
+                        textSpan.textContent = `${card.term} (${defShow.substring(0, 15)}...)`;
+                        
+                        p.appendChild(checkbox);
+                        p.appendChild(textSpan);
+                        
+                        btn.classList.add('delete-btn');
+                        btn.textContent = '删除';
+                        btn.onclick = () => deleteWord(card.id);
+                        
+                        li.appendChild(p);
+                        li.appendChild(btn);
+                        groupItems.appendChild(li);
+                    });
+                    
+                    list.appendChild(groupItems);
+                });
+            } else {
+                // 不分组，按字母排序
+                const ul = document.createElement('ul');
+                ul.className = 'word-list';
+                
+                const sortedDeck = [...deck].sort((a, b) => a.term.localeCompare(b.term));
+                
+                sortedDeck.forEach(card => {
+                    const li = document.createElement('li');
+                    const p = document.createElement('span');
+                    const btn = document.createElement('button');
+                    
+                    p.classList.add('term-display');
+                    
+                    // 添加复选框
+                    const checkbox = document.createElement('input');
+                    checkbox.type = 'checkbox';
+                    checkbox.className = 'word-checkbox';
+                    checkbox.checked = selectedWords.has(card.id);
+                    checkbox.onchange = () => toggleWordSelection(card.id);
+                    
+                    const textSpan = document.createElement('span');
+                    let defShow = card.definition || '';
+                    if (card.part_of_speech) defShow = `${card.part_of_speech} ${defShow}`;
+                    textSpan.textContent = `${card.term} (${defShow.substring(0, 15)}...)`;
+                    
+                    p.appendChild(checkbox);
+                    p.appendChild(textSpan);
+                    
+                    btn.classList.add('delete-btn');
+                    btn.textContent = '删除';
+                    btn.onclick = () => deleteWord(card.id);
+                    
+                    li.appendChild(p);
+                    li.appendChild(btn);
+                    ul.appendChild(li);
+                });
+                
+                list.appendChild(ul);
+            }
+            
+            // 更新选中状态UI
+            updateSelectionUI();
+        }
+
+        function deleteWord(id) {
+            if (confirm('确定要从词库中永久删除此单词吗？')) {
+                deck = deck.filter(c => c.id !== id);
+                selectedWords.delete(id); // 从选中列表中移除
+                saveData();
+                renderDeckList(); 
+                if (currentCard && currentCard.id === id) {
+                    nextCard();
+                }
+            }
+        }
+        
+        function openImport() { document.getElementById('importModal').classList.remove('hidden'); }
+        function closeModal(id) { document.getElementById(id).classList.add('hidden'); }
+
+        document.addEventListener('keydown', (e) => {
+            const modalOpen = !document.getElementById('importModal').classList.contains('hidden') || !document.getElementById('deckManagerModal').classList.contains('hidden');
+            
+            if (e.target.tagName === 'TEXTAREA') return;
+
+            if (!modalOpen) {
+                if (e.code === 'Space') {
+                    e.preventDefault();
+                    if (!isRevealed) reveal();
+                } else if (e.key === '1') {
+                    if (isRevealed) rate(false);
+                } else if (e.key === '2' || e.key === 'Enter') {
+                    if (isRevealed) rate(true);
+                }
+            }
+        });
+
+        document.getElementById('cardArea').addEventListener('click', (e) => {
+            if (e.target.tagName !== 'BUTTON' && !isRevealed) reveal();
+        });
+
+        init();
+    </script>
+</body>
+</html>

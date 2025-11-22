@@ -1,0 +1,51 @@
+/**
+ * CSS变量定义
+ * 统一的主题色和样式变量，便于维护和主题切换
+ */
+
+:root {
+    /* 主题色 */
+    --primary-color: #3498db;
+    --secondary-color: #2980b9;
+    --accent-color: #e74c3c;
+    --light-color: #ecf0f1;
+    --dark-color: #2c3e50;
+    --success-color: #27ae60;
+    --gray-color: #95a5a6;
+    --light-gray: #f1f2f3;
+    
+    /* 日间模式背景和文本颜色 */
+    --bg-primary: #f5f7fa;
+    --bg-secondary: white;
+    --text-primary: #333;
+    --text-secondary: #666;
+    --border-color: #eee;
+    --chat-bg: #fafafa;
+    --ai-message-bg: #e6e6e6;
+}
+
+/* 夜间模式变量 */
+body.dark-mode {
+    --bg-primary: #121212;
+    --bg-secondary: #1e1e1e;
+    --text-primary: #e0e0e0;
+    --text-secondary: #b0b0b0;
+    --border-color: #333;
+    --chat-bg: #2a2a2a;
+    --ai-message-bg: #3d3d3d;
+    --gray-color: #707070;
+    --light-gray: #333;
+}
+
+/* 夜间模式下的按钮样式 */
+body.dark-mode .btn-secondary {
+    background-color: #333;
+    color: #e0e0e0;
+    border: 1px solid #555;
+}
+
+body.dark-mode .btn-secondary:hover {
+    background-color: #444;
+    color: white;
+}
+

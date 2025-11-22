@@ -1,0 +1,47 @@
+# ============================================
+# AI智能学习伴侣导师 - Python依赖包
+# ============================================
+
+# FastAPI Web框架
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic==2.5.2
+pydantic-settings==2.1.0
+
+# 数据库ORM和驱动
+sqlalchemy==2.0.25
+pymysql==1.1.0
+
+# 认证和安全
+python-jose[cryptography]==3.3.0
+PyJWT==2.8.0
+passlib[bcrypt]==1.7.4
+werkzeug==3.0.1
+
+# 环境变量和配置
+python-dotenv==1.0.0
+
+# 邮件验证
+email-validator==2.1.0
+
+# AI服务
+openai==1.6.1
+
+# 文件处理和图像处理
+python-multipart==0.0.6
+Pillow==10.1.0
+
+# 网络工具
+netifaces==0.11.0
+httpx==0.25.2
+
+# 工具库
+python-dateutil==2.8.2
+
+# PDF生成
+reportlab==4.0.9
+
+# 开发工具（可选，取消注释以安装）
+# pytest==7.4.4
+# pytest-asyncio==0.21.1
+# black==23.12.1

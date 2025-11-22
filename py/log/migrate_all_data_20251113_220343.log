@@ -1,0 +1,13 @@
+2025-11-13 22:03:44,220 - INFO - ================================================================================
+2025-11-13 22:03:44,221 - INFO - 开始数据导出
+2025-11-13 22:03:44,221 - INFO - 源数据库: localhost:3306/old_database
+2025-11-13 22:03:44,221 - INFO - 输出目录: migration_data
+2025-11-13 22:03:44,221 - INFO - ================================================================================
+2025-11-13 22:03:44,234 - ERROR - 数据库连接失败: (pymysql.err.OperationalError) (1049, "Unknown database 'old_database'")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-11-13 22:03:44,234 - INFO - 
+✓ 导出完成！
+2025-11-13 22:03:44,234 - INFO - 数据文件目录: migration_data
+2025-11-13 22:03:44,234 - INFO - 
+下一步: 使用以下命令导入数据:
+2025-11-13 22:03:44,236 - INFO - python py/script/数据库迁移/migrate_all_data.py import --target-db "<目标数据库URL>" --data-dir "migration_data"

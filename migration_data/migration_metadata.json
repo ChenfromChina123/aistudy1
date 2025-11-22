@@ -1,0 +1,204 @@
+{
+  "export_time": "2025-11-13T22:12:55.864775",
+  "source_database": "localhost:3306/ipv6_education",
+  "tables": [
+    {
+      "table": "users",
+      "source_count": 6,
+      "exported_count": 6,
+      "file": "users.sql"
+    },
+    {
+      "table": "categories",
+      "source_count": 11,
+      "exported_count": 11,
+      "file": "categories.sql"
+    },
+    {
+      "table": "vocabulary_lists",
+      "source_count": 6,
+      "exported_count": 6,
+      "file": "vocabulary_lists.sql"
+    },
+    {
+      "table": "public_vocabulary_words",
+      "source_count": 981,
+      "exported_count": 981,
+      "file": "public_vocabulary_words.sql"
+    },
+    {
+      "table": "vocabulary_upload_tasks",
+      "source_count": 2,
+      "exported_count": 2,
+      "file": "vocabulary_upload_tasks.sql"
+    },
+    {
+      "table": "admins",
+      "source_count": 1,
+      "exported_count": 1,
+      "file": "admins.sql"
+    },
+    {
+      "table": "verification_codes",
+      "source_count": 1,
+      "exported_count": 1,
+      "file": "verification_codes.sql"
+    },
+    {
+      "table": "custom_ai_models",
+      "source_count": 1,
+      "exported_count": 1,
+      "file": "custom_ai_models.sql"
+    },
+    {
+      "table": "notes",
+      "source_count": 1,
+      "exported_count": 1,
+      "file": "notes.sql"
+    },
+    {
+      "table": "user_folders",
+      "source_count": 3,
+      "exported_count": 3,
+      "file": "user_folders.sql"
+    },
+    {
+      "table": "user_files",
+      "source_count": 0,
+      "exported_count": 0,
+      "file": "user_files.sql"
+    },
+    {
+      "table": "chat_sessions",
+      "source_count": 0,
+      "exported_count": 0,
+      "file": "chat_sessions.sql"
+    },
+    {
+      "table": "resources",
+      "source_count": 7,
+      "exported_count": 7,
+      "file": "resources.sql"
+    },
+    {
+      "table": "feedbacks",
+      "source_count": 0,
+      "exported_count": 0,
+      "file": "feedbacks.sql"
+    },
+    {
+      "table": "user_learning_records",
+      "source_count": 498,
+      "exported_count": 498,
+      "file": "user_learning_records.sql"
+    },
+    {
+      "table": "generated_articles",
+      "source_count": 32,
+      "exported_count": 32,
+      "file": "generated_articles.sql"
+    },
+    {
+      "table": "file_shares",
+      "source_count": 0,
+      "exported_count": 0,
+      "file": "file_shares.sql"
+    },
+    {
+      "table": "chat_records",
+      "source_count": 102,
+      "exported_count": 102,
+      "file": "chat_records.sql"
+    },
+    {
+      "table": "collections",
+      "source_count": 25,
+      "exported_count": 25,
+      "file": "collections.sql"
+    },
+    {
+      "table": "public_resources",
+      "source_count": 0,
+      "exported_count": 0,
+      "file": "public_resources.sql"
+    },
+    {
+      "table": "vocabulary_words",
+      "source_count": 522,
+      "exported_count": 522,
+      "file": "vocabulary_words.sql"
+    },
+    {
+      "table": "user_word_progress",
+      "source_count": 213,
+      "exported_count": 213,
+      "file": "user_word_progress.sql"
+    },
+    {
+      "table": "article_used_words",
+      "source_count": 127,
+      "exported_count": 127,
+      "file": "article_used_words.sql"
+    },
+    {
+      "table": "chat_session_titles",
+      "source_count": 0,
+      "exported_count": 0,
+      "file": "chat_session_titles.sql"
+    },
+    {
+      "table": "comments",
+      "source_count": 0,
+      "exported_count": 0,
+      "file": "comments.sql"
+    },
+    {
+      "table": "dislikes",
+      "source_count": 0,
+      "exported_count": 0,
+      "file": "dislikes.sql"
+    },
+    {
+      "table": "feedback",
+      "source_count": 17,
+      "exported_count": 17,
+      "file": "feedback.sql"
+    },
+    {
+      "table": "files",
+      "source_count": 12,
+      "exported_count": 12,
+      "file": "files.sql"
+    },
+    {
+      "table": "posts",
+      "source_count": 0,
+      "exported_count": 0,
+      "file": "posts.sql"
+    },
+    {
+      "table": "test_table",
+      "source_count": 2,
+      "exported_count": 2,
+      "file": "test_table.sql"
+    },
+    {
+      "table": "user_favorites",
+      "source_count": 32,
+      "exported_count": 32,
+      "file": "user_favorites.sql"
+    },
+    {
+      "table": "user_settings",
+      "source_count": 2,
+      "exported_count": 2,
+      "file": "user_settings.sql"
+    }
+  ],
+  "stats": {
+    "total_tables": 32,
+    "exported_tables": 32,
+    "total_records": 2604,
+    "exported_records": 2604
+  }
+}

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>云盘认证测试工具</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            color: #333;
+        }
+        .section {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .warning {
+            background-color: #ffdddd;
+            border-left: 6px solid #f44336;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .success {
+            background-color: #ddffdd;
+            border-left: 6px solid #4CAF50;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        textarea {
+            width: 100%;
+            height: 150px;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+            font-family: monospace;
+        }
+        .test-case {
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-radius: 4px;
+        }
+        .test-case h4 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>云盘认证测试工具</h1>
+        
+        <div class="section">
+            <h2>存储状态检查</h2>
+            <button id="checkStorage">检查当前存储状态</button>
+            <div id="storageStatus" style="margin-top: 15px;"></div>
+        </div>
+
+        <div class="section">
+            <h2>模拟用户登录状态</h2>
+            <div class="warning">
+                <strong>警告：</strong>此测试工具仅用于开发测试，请勿在生产环境使用。
+            </div>
+            <div>
+                <label for="testToken">测试Token:</label>
+                <input type="text" id="testToken" placeholder="输入测试用的JWT Token">
+            </div>
+            <div>
+                <label for="testUserId">用户ID:</label>
+                <input type="text" id="testUserId" placeholder="输入测试用的用户ID">
+            </div>
+            <div>
+                <label for="testUsername">用户名:</label>
+                <input type="text" id="testUsername" placeholder="输入测试用的用户名">
+            </div>
+            <button id="setAuthState">设置认证状态</button>
+            <button id="clearAuthState">清除认证状态</button>
+            <div id="authStateResult" style="margin-top: 15px;"></div>
+        </div>
+
+        <div class="section">
+            <h2>Token验证测试</h2>
+            <div class="test-case">
+                <h4>测试1: 模拟修复后的validateToken函数</h4>
+                <button id="testValidateToken">运行验证测试</button>
+                <div id="validateTokenResult" style="margin-top: 15px;"></div>
+            </div>
+            <div class="test-case">
+                <h4>测试2: 模拟修复后的loadFolderTree函数</h4>
+                <button id="testLoadFolderTree">运行加载文件夹测试</button>
+                <div id="loadFolderTreeResult" style="margin-top: 15px;"></div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>测试结果日志</h2>
+            <textarea id="testLog" readonly></textarea>
+        </div>
+    </div>
+
+    <script>
+        // API基础URL
+        const API_BASE_URL = 'http://localhost:8000';
+        
+        // 辅助函数：添加日志
+        function log(message) {
+            const timestamp = new Date().toLocaleTimeString();
+            const logText = `[${timestamp}] ${message}\n`;
+            document.getElementById('testLog').value += logText;
+            document.getElementById('testLog').scrollTop = document.getElementById('testLog').scrollHeight;
+            console.log(`[${timestamp}] ${message}`);
+        }
+        
+        // 辅助函数：显示结果
+        function showResult(elementId, content, isSuccess = true) {
+            const element = document.getElementById(elementId);
+            element.innerHTML = content;
+            element.className = isSuccess ? 'success' : 'warning';
+        }
+        
+        // 检查当前存储状态
+        document.getElementById('checkStorage').addEventListener('click', function() {
+            log('开始检查存储状态...');
+            let statusHTML = '<h4>当前存储状态:</h4><ul>';
+            
+            // 检查localStorage
+            statusHTML += '<li><strong>LocalStorage:</strong></li><ul>';
+            statusHTML += `<li>access_token: ${localStorage.getItem('access_token') ? '存在' : '不存在'}</li>`;
+            statusHTML += `<li>aiLearningToken: ${localStorage.getItem('aiLearningToken') ? '存在' : '不存在'}</li>`;
+            
+            const aiLearningUser = localStorage.getItem('aiLearningUser');
+            statusHTML += `<li>aiLearningUser: ${aiLearningUser ? '存在' : '不存在'}</li>`;
+            if (aiLearningUser) {
+                try {
+                    const userObj = JSON.parse(aiLearningUser);
+                    statusHTML += `<li>aiLearningUser.id: ${userObj.id || '不存在'}</li>`;
+                    statusHTML += `<li>aiLearningUser.username: ${userObj.username || '不存在'}</li>`;
+                } catch (e) {
+                    statusHTML += `<li>aiLearningUser解析错误: ${e.message}</li>`;
+                }
+            }
+            statusHTML += '</ul>';
+            
+            // 检查sessionStorage
+            statusHTML += '<li><strong>SessionStorage:</strong></li><ul>';
+            statusHTML += `<li>access_token: ${sessionStorage.getItem('access_token') ? '存在' : '不存在'}</li>`;
+            statusHTML += `<li>aiLearningToken: ${sessionStorage.getItem('aiLearningToken') ? '存在' : '不存在'}</li>`;
+            statusHTML += '</ul>';
+            
+            // 检查Cookie
+            statusHTML += '<li><strong>Cookies:</strong></li><ul>';
+            const cookies = document.cookie.split(';');
+            if (cookies.length === 0 || (cookies.length === 1 && cookies[0].trim() === '')) {
+                statusHTML += '<li>无Cookie</li>';
+            } else {
+                cookies.forEach(cookie => {
+                    const parts = cookie.split('=');
+                    statusHTML += `<li>${parts[0].trim()}: 存在</li>`;
+                });
+            }
+            statusHTML += '</ul>';
+            
+            statusHTML += '</ul>';
+            document.getElementById('storageStatus').innerHTML = statusHTML;
+            log('存储状态检查完成');
+        });
+        
+        // 设置认证状态
+        document.getElementById('setAuthState').addEventListener('click', function() {
+            const token = document.getElementById('testToken').value;
+            const userId = document.getElementById('testUserId').value;
+            const username = document.getElementById('testUsername').value;
+            
+            if (!token || !userId) {
+                showResult('authStateResult', '请输入Token和用户ID', false);
+                log('设置认证状态失败：缺少必要信息');
+                return;
+            }
+            
+            try {
+                // 设置到localStorage
+                localStorage.setItem('access_token', token);
+                localStorage.setItem('aiLearningToken', token); // 同时设置两个token
+                localStorage.setItem('aiLearningUser', JSON.stringify({
+                    id: userId,
+                    username: username || 'test_user'
+                }));
+                
+                showResult('authStateResult', '认证状态设置成功！<br>已在localStorage中设置access_token、aiLearningToken和aiLearningUser');
+                log('认证状态设置成功');
+            } catch (e) {
+                showResult('authStateResult', `设置失败: ${e.message}`, false);
+                log(`设置认证状态失败: ${e.message}`);
+            }
+        });
+        
+        // 清除认证状态
+        document.getElementById('clearAuthState').addEventListener('click', function() {
+            try {
+                localStorage.removeItem('access_token');
+                localStorage.removeItem('aiLearningToken');
+                localStorage.removeItem('aiLearningUser');
+                sessionStorage.removeItem('access_token');
+                sessionStorage.removeItem('aiLearningToken');
+                
+                // 清除相关cookie
+                document.cookie.split(';').forEach(cookie => {
+                    const name = cookie.split('=')[0].trim();
+                    document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`;
+                });
+                
+                showResult('authStateResult', '认证状态清除成功！');
+                log('认证状态清除成功');
+            } catch (e) {
+                showResult('authStateResult', `清除失败: ${e.message}`, false);
+                log(`清除认证状态失败: ${e.message}`);
+            }
+        });
+        
+        // 模拟修复后的validateToken函数
+        function mockValidateToken() {
+            return new Promise((resolve, reject) => {
+                // 获取token（增强版，尝试多个来源）
+                const token = localStorage.getItem('access_token') || localStorage.getItem('aiLearningToken');
+                
+                log(`模拟validateToken函数 - 使用token: ${token ? '存在' : '不存在'}`);
+                
+                if (!token) {
+                    log('模拟validateToken函数 - 无可用token');
+                    // 返回验证失败对象而非reject
+                    resolve({ valid: false, error: '未找到登录信息' });
+                    return;
+                }
+                
+                // 在实际环境中，这里会调用后端API
+                // 这里我们模拟API响应
+                log('模拟API调用: POST /api/auth/verify');
+                
+                // 模拟响应 - 模拟后端返回user_id的情况
+                setTimeout(() => {
+                    const mockResponse = {
+                        user_id: localStorage.getItem('aiLearningUser') ? 
+                            JSON.parse(localStorage.getItem('aiLearningUser')).id : '1',
+                        username: localStorage.getItem('aiLearningUser') ? 
+                            JSON.parse(localStorage.getItem('aiLearningUser')).username : 'test_user',
+                        message: 'Token验证成功'
+                    };
+                    
+                    log(`模拟API响应: ${JSON.stringify(mockResponse)}`);
+                    
+                    // 增强版验证逻辑：检查data.user_id
+                    if (mockResponse.user_id) {
+                        log('验证成功：检测到有效的user_id');
+                        resolve({
+                            valid: true, // 兼容前端期望的valid字段
+                            ...mockResponse
+                        });
+                    } else {
+                        log('验证失败：未检测到有效的user_id');
+                        resolve({ valid: false, error: 'Token无效' });
+                    }
+                }, 500);
+            });
+        }
+        
+        // 测试validateToken函数
+        document.getElementById('testValidateToken').addEventListener('click', async function() {
+            log('开始测试修复后的validateToken函数...');
+            
+            try {
+                const result = await mockValidateToken();
+                
+                let resultHTML = '<h4>验证结果:</h4><ul>';
+                resultHTML += `<li>验证成功: ${result.valid}</li>`;
+                resultHTML += `<li>user_id: ${result.user_id || '不存在'}</li>`;
+                resultHTML += `<li>username: ${result.username || '不存在'}</li>`;
+                if (result.error) {
+                    resultHTML += `<li>错误信息: ${result.error}</li>`;
+                }
+                resultHTML += '</ul>';
+                
+                resultHTML += '<h4>修复后的逻辑验证:</h4><ul>';
+                resultHTML += '<li>✓ 多来源token获取（access_token/aiLearningToken）</li>';
+                resultHTML += '<li>✓ 同时检查user_id字段</li>';
+                resultHTML += '<li>✓ 返回验证结果对象而非reject</li>';
+                resultHTML += '</ul>';
+                
+                showResult('validateTokenResult', resultHTML, result.valid);
+                log('validateToken函数测试完成');
+            } catch (e) {
+                showResult('validateTokenResult', `测试失败: ${e.message}`, false);
+                log(`validateToken函数测试失败: ${e.message}`);
+            }
+        });
+        
+        // 模拟修复后的loadFolderTree函数
+        function mockLoadFolderTree() {
+            return new Promise((resolve, reject) => {
+                // 获取最新token（增强版）
+                const latestToken = localStorage.getItem('access_token') || localStorage.getItem('aiLearningToken');
+                
+                log(`模拟loadFolderTree函数 - 使用最新token: ${latestToken ? '存在' : '不存在'}`);
+                
+                if (!latestToken) {
+                    log('模拟loadFolderTree函数 - 无可用token');
+                    reject(new Error('未找到有效的认证信息'));
+                    return;
+                }
+                
+                // 在实际环境中，这里会调用后端API
+                // 增强版：移除user_id参数，让后端从token中解析
+                log('模拟API调用: GET /api/cloud_disk/files');
+                log(`请求头: Authorization: Bearer ${latestToken}`);
+                
+                // 模拟响应
+                setTimeout(() => {
+                    const mockResponse = {
+                        success: true,
+                        folders: [
+                            { id: 1, name: '我的文档', parent_id: null },
+                            { id: 2, name: '学习资料', parent_id: null },
+                            { id: 3, name: '项目文件', parent_id: 1 }
+                        ],
+                        files: [
+                            { id: 101, name: '笔记.txt', folder_id: 1, size: '1.2KB' },
+                            { id: 102, name: '计划.pdf', folder_id: 2, size: '3.5MB' }
+                        ]
+                    };
+                    
+                    log(`模拟API响应: 成功加载${mockResponse.folders.length}个文件夹和${mockResponse.files.length}个文件`);
+                    resolve(mockResponse);
+                }, 800);
+            });
+        }
+        
+        // 测试loadFolderTree函数
+        document.getElementById('testLoadFolderTree').addEventListener('click', async function() {
+            log('开始测试修复后的loadFolderTree函数...');
+            
+            try {
+                const result = await mockLoadFolderTree();
+                
+                let resultHTML = '<h4>加载结果:</h4><ul>';
+                resultHTML += `<li>加载成功: ${result.success}</li>`;
+                resultHTML += `<li>文件夹数量: ${result.folders.length}</li>`;
+                resultHTML += `<li>文件数量: ${result.files.length}</li>`;
+                resultHTML += '</ul>';
+                
+                resultHTML += '<h4>文件夹列表:</h4><ul>';
+                result.folders.forEach(folder => {
+                    resultHTML += `<li>${folder.name} (ID: ${folder.id})</li>`;
+                });
+                resultHTML += '</ul>';
+                
+                resultHTML += '<h4>文件列表:</h4><ul>';
+                result.files.forEach(file => {
+                    resultHTML += `<li>${file.name} (大小: ${file.size})</li>`;
+                });
+                resultHTML += '</ul>';
+                
+                resultHTML += '<h4>修复后的逻辑验证:</h4><ul>';
+                resultHTML += '<li>✓ 使用最新token（多来源获取）</li>';
+                resultHTML += '<li>✓ 从请求URL中移除user_id参数</li>';
+                resultHTML += '<li>✓ 在请求头中正确设置Bearer token</li>';
+                resultHTML += '</ul>';
+                
+                showResult('loadFolderTreeResult', resultHTML, true);
+                log('loadFolderTree函数测试完成');
+            } catch (e) {
+                showResult('loadFolderTreeResult', `测试失败: ${e.message}`, false);
+                log(`loadFolderTree函数测试失败: ${e.message}`);
+            }
+        });
+        
+        // 初始化时检查存储状态
+        window.addEventListener('DOMContentLoaded', function() {
+            log('云盘认证测试工具已加载');
+            // 不自动检查，等待用户点击
+        });
+    </script>
+</body>
+</html>

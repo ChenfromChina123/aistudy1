@@ -1,0 +1,13 @@
+# 数据库迁移脚本依赖文件
+# 安装方法: pip install -r requirements.txt
+
+# 数据库相关
+sqlalchemy>=1.4.0
+pymysql>=1.0.0
+
+# 环境变量管理
+python-dotenv>=0.19.0
+
+# 注意：脚本已改为命令行输入路径方式，不再需要图形界面（tkinter）
+# 适合服务器环境使用
+

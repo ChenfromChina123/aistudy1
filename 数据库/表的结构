@@ -1,0 +1,55 @@
+创建数据库：
+-- 创建数据库并设置字符集
+CREATE DATABASE IF NOT EXISTS ipv6_education
+  CHARACTER SET utf8mb4
+  COLLATE utf8mb4_unicode_ci;
+
+-- 选择使用该数据库
+USE ipv6_education;
+
+用户表（users）：
+CREATE TABLE IF NOT EXISTS users (
+  id INT AUTO_INCREMENT PRIMARY KEY COMMENT '用户ID（自增主键）',
+  username VARCHAR(80) NOT NULL UNIQUE COMMENT '用户名（唯一）',
+  email VARCHAR(120) NOT NULL UNIQUE COMMENT '邮箱（唯一，用于找回密码）',
+  password_hash VARCHAR(255) NOT NULL COMMENT '加密后的密码（不存明文）',
+  created_at DATETIME DEFAULT CURRENT_TIMESTAMP COMMENT '注册时间',
+  updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '信息更新时间'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT '用户登录信息表';
+
+
+资源分类表（categories）：
+CREATE TABLE IF NOT EXISTS categories (
+  id INT AUTO_INCREMENT PRIMARY KEY COMMENT '分类ID（自增主键）',
+  name VARCHAR(50) NOT NULL UNIQUE COMMENT '分类名称（唯一，如“量子力学”）',
+  description TEXT COMMENT '分类描述（可选）',
+  created_at DATETIME DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT 'IPv6教育资源分类表';
+
+
+IPv6 教育资源表（resources）
+CREATE TABLE IF NOT EXISTS resources (
+  id INT AUTO_INCREMENT PRIMARY KEY COMMENT '资源ID（自增主键）',
+  category_id INT NOT NULL COMMENT '关联的分类ID（外键）',
+  title VARCHAR(200) NOT NULL COMMENT '资源标题（如“微积分精讲课程”）',
+  url VARCHAR(500) NOT NULL COMMENT 'IPv6资源地址（如http://[2001:da8:202:10::47]/...）',
+  description TEXT COMMENT '资源描述（如“清华大学课程视频”）',
+  created_at DATETIME DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+  -- 外键约束：关联分类表的id字段
+  FOREIGN KEY (category_id) REFERENCES categories(id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT 'IPv6教育资源详情表';
+
+
+用户收藏表（user_favorites）
+CREATE TABLE IF NOT EXISTS user_favorites (
+  id INT AUTO_INCREMENT PRIMARY KEY COMMENT '收藏ID（自增主键）',
+  user_id INT NOT NULL COMMENT '关联的用户ID（外键）',
+  resource_id INT NOT NULL COMMENT '关联的资源ID（外键）',
+  created_at DATETIME DEFAULT CURRENT_TIMESTAMP COMMENT '收藏时间',
+  -- 外键约束：关联用户表和资源表
+  FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+  FOREIGN KEY (resource_id) REFERENCES resources(id) ON DELETE CASCADE,
+  -- 唯一约束：同一用户不能重复收藏同一资源
+  UNIQUE KEY unique_user_resource (user_id, resource_id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT '用户收藏资源关联表';

@@ -1,0 +1,60 @@
+/**
+ * 基础样式和CSS重置
+ * 清除默认样式，设置全局基础样式
+ */
+
+/* CSS重置：清除默认样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box; /* 统一伪元素盒模型 */
+}
+
+a {
+    color: inherit; /* 继承父元素颜色 */
+    text-decoration: none; /* 清除默认下划线 */
+}
+
+input,
+button,
+textarea {
+    font-family: inherit; /* 继承字体，保证样式统一 */
+    outline: none; /* 清除默认聚焦外框，后续自定义 */
+}
+
+ol,
+ul {
+    list-style: none; /* 清除列表默认圆点/数字 */
+}
+
+table {
+    border-collapse: collapse; /* 表格边框合并 */
+    border-spacing: 0; /* 表格边框间距清零 */
+}
+
+/* 基础样式：页面整体布局 */
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.6;
+    overflow: hidden; /* 首次登录时禁止页面滚动 */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* 登录后允许页面滚动 */
+body.logged-in {
+    overflow: auto;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+

@@ -1,0 +1,10 @@
+export DATABASE_URL='mysql+pymysql://ipv6_education:w4aGH8FWGMF4y4GA@localhost/ipv6_education'
+export JWT_SECRET_KEY='123456'
+export DEEPSEEK_API_KEY='sk-45021a61b84a4693a1db4deb72cec673'
+export DOUBAO_KEY='6261fd4e-7ac5-46de-95a6-f68f00243230'
+export DEEPSEEK_URL='https://api.deepseek.com'
+export DOUBAO_BASEURL='https://ark.cn-beijing.volces.com/api/v3'
+export MAX_TOKEN='8192'
+export ALI_TOKEN='123147chenP@s'
+# 文件大小限制（字节），默认500MB，可以设置为更大值（如1GB=1073741824）
+export MAX_FILE_SIZE='524288000'  # 500MB
