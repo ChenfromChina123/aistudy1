@@ -3612,7 +3612,7 @@
         //depthSelectordiv.style.display = 'none';
         // ---------------------- 全局配置与变量 ----------------------
         // 使用当前页面域名作为API基础地址，便于部署到云服务器
-const API_BASE_URL = `${window.location.origin}`;
+const API_BASE_URL = `${window.location.origin}/old`;
 let currentUser = null; // 缓存当前用户信息，避免依赖浏览器本地存储
 let countdownTimer = null; // 验证码倒计时定时器（全局作用域，避免切换表单残留）
         const COUNTDOWN_SECONDS = 60; // 验证码重新获取倒计时（秒）

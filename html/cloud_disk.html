@@ -1667,15 +1667,7 @@
             // 支持从localStorage读取自定义API地址
             let API_BASE_URL = localStorage.getItem('cloud_disk_api_url');
             if (!API_BASE_URL) {
-                // 如果没有自定义配置，使用与页面相同的协议
-                if (window.location.protocol === 'https:') {
-                    // HTTPS页面：尝试使用HTTPS API（相同端口或默认443）
-                    // 如果服务器在5001端口，可能需要通过反向代理访问
-                    API_BASE_URL = `https://${window.location.hostname}${window.location.port ? ':' + window.location.port : ''}`;
-                } else {
-                    // HTTP页面：使用HTTP API
-                    API_BASE_URL = `${window.location.protocol}//${window.location.hostname}:5001`;
-                }
+                API_BASE_URL = `${window.location.origin}/old`;
             }
             let token = localStorage.getItem('access_token') || localStorage.getItem('aiLearningToken');
             let currentUser = JSON.parse(localStorage.getItem('aiLearningUser') || '{}');
