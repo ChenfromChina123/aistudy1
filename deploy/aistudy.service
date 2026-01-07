@@ -1,0 +1,16 @@
+[Unit]
+Description=AI Study Assistant Service
+After=network.target mysql.service
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/www/project/aistudy1/py
+ExecStart=/usr/bin/python3 run.py
+Restart=always
+RestartSec=5
+StandardOutput=append:/www/project/aistudy1/server.log
+StandardError=append:/www/project/aistudy1/server.log
+
+[Install]
+WantedBy=multi-user.target
