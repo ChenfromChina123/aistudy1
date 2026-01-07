@@ -1,0 +1,146 @@
+2025-11-13 22:12:55,181 - INFO - ================================================================================
+2025-11-13 22:12:55,183 - INFO - 开始数据导出
+2025-11-13 22:12:55,183 - INFO - 源数据库: localhost:3306/ipv6_education
+2025-11-13 22:12:55,183 - INFO - 输出目录: migration_data
+2025-11-13 22:12:55,183 - INFO - ================================================================================
+2025-11-13 22:12:55,202 - INFO - ✓ 源数据库连接成功
+2025-11-13 22:12:55,229 - INFO - 将导出 32 个表
+2025-11-13 22:12:55,229 - INFO - 导出顺序: users, categories, vocabulary_lists, public_vocabulary_words, vocabulary_upload_tasks, admins, verification_codes, custom_ai_models, notes, user_folders, user_files, chat_sessions, resources, feedbacks, user_learning_records, generated_articles, file_shares, chat_records, collections, public_resources, vocabulary_words, user_word_progress, article_used_words, chat_session_titles, comments, dislikes, feedback, files, posts, test_table, user_favorites, user_settings
+2025-11-13 22:12:55,229 - INFO - --------------------------------------------------------------------------------
+2025-11-13 22:12:55,229 - INFO - 
+[1/32] 导出表: users
+2025-11-13 22:12:55,236 - INFO - 开始导出表 users，记录数: 6
+2025-11-13 22:12:55,258 - INFO - ✓ 表 users 导出完成: 6 条记录 -> migration_data\users.sql
+2025-11-13 22:12:55,258 - INFO - 
+[2/32] 导出表: categories
+2025-11-13 22:12:55,264 - INFO - 开始导出表 categories，记录数: 11
+2025-11-13 22:12:55,267 - INFO - ✓ 表 categories 导出完成: 11 条记录 -> migration_data\categories.sql
+2025-11-13 22:12:55,268 - INFO - 
+[3/32] 导出表: vocabulary_lists
+2025-11-13 22:12:55,274 - INFO - 开始导出表 vocabulary_lists，记录数: 6
+2025-11-13 22:12:55,279 - INFO - ✓ 表 vocabulary_lists 导出完成: 6 条记录 -> migration_data\vocabulary_lists.sql
+2025-11-13 22:12:55,280 - INFO - 
+[4/32] 导出表: public_vocabulary_words
+2025-11-13 22:12:55,286 - INFO - 开始导出表 public_vocabulary_words，记录数: 981
+2025-11-13 22:12:55,333 - INFO - ✓ 表 public_vocabulary_words 导出完成: 981 条记录 -> migration_data\public_vocabulary_words.sql
+2025-11-13 22:12:55,334 - INFO - 
+[5/32] 导出表: vocabulary_upload_tasks
+2025-11-13 22:12:55,355 - INFO - 开始导出表 vocabulary_upload_tasks，记录数: 2
+2025-11-13 22:12:55,359 - INFO - ✓ 表 vocabulary_upload_tasks 导出完成: 2 条记录 -> migration_data\vocabulary_upload_tasks.sql
+2025-11-13 22:12:55,360 - INFO - 
+[6/32] 导出表: admins
+2025-11-13 22:12:55,366 - INFO - 开始导出表 admins，记录数: 1
+2025-11-13 22:12:55,370 - INFO - ✓ 表 admins 导出完成: 1 条记录 -> migration_data\admins.sql
+2025-11-13 22:12:55,370 - INFO - 
+[7/32] 导出表: verification_codes
+2025-11-13 22:12:55,375 - INFO - 开始导出表 verification_codes，记录数: 1
+2025-11-13 22:12:55,378 - INFO - ✓ 表 verification_codes 导出完成: 1 条记录 -> migration_data\verification_codes.sql
+2025-11-13 22:12:55,378 - INFO - 
+[8/32] 导出表: custom_ai_models
+2025-11-13 22:12:55,395 - INFO - 开始导出表 custom_ai_models，记录数: 1
+2025-11-13 22:12:55,400 - INFO - ✓ 表 custom_ai_models 导出完成: 1 条记录 -> migration_data\custom_ai_models.sql
+2025-11-13 22:12:55,400 - INFO - 
+[9/32] 导出表: notes
+2025-11-13 22:12:55,416 - INFO - 开始导出表 notes，记录数: 1
+2025-11-13 22:12:55,419 - INFO - ✓ 表 notes 导出完成: 1 条记录 -> migration_data\notes.sql
+2025-11-13 22:12:55,419 - INFO - 
+[10/32] 导出表: user_folders
+2025-11-13 22:12:55,436 - INFO - 开始导出表 user_folders，记录数: 3
+2025-11-13 22:12:55,440 - INFO - ✓ 表 user_folders 导出完成: 3 条记录 -> migration_data\user_folders.sql
+2025-11-13 22:12:55,440 - INFO - 
+[11/32] 导出表: user_files
+2025-11-13 22:12:55,455 - INFO - 表 user_files 无数据，跳过
+2025-11-13 22:12:55,457 - INFO - 
+[12/32] 导出表: chat_sessions
+2025-11-13 22:12:55,474 - INFO - 表 chat_sessions 无数据，跳过
+2025-11-13 22:12:55,475 - INFO - 
+[13/32] 导出表: resources
+2025-11-13 22:12:55,480 - INFO - 开始导出表 resources，记录数: 7
+2025-11-13 22:12:55,483 - INFO - ✓ 表 resources 导出完成: 7 条记录 -> migration_data\resources.sql
+2025-11-13 22:12:55,484 - INFO - 
+[14/32] 导出表: feedbacks
+2025-11-13 22:12:55,500 - INFO - 表 feedbacks 无数据，跳过
+2025-11-13 22:12:55,501 - INFO - 
+[15/32] 导出表: user_learning_records
+2025-11-13 22:12:55,518 - INFO - 开始导出表 user_learning_records，记录数: 498
+2025-11-13 22:12:55,534 - INFO - ✓ 表 user_learning_records 导出完成: 498 条记录 -> migration_data\user_learning_records.sql
+2025-11-13 22:12:55,534 - INFO - 
+[16/32] 导出表: generated_articles
+2025-11-13 22:12:55,540 - INFO - 开始导出表 generated_articles，记录数: 32
+2025-11-13 22:12:55,546 - INFO - ✓ 表 generated_articles 导出完成: 32 条记录 -> migration_data\generated_articles.sql
+2025-11-13 22:12:55,548 - INFO - 
+[17/32] 导出表: file_shares
+2025-11-13 22:12:55,563 - INFO - 表 file_shares 无数据，跳过
+2025-11-13 22:12:55,564 - INFO - 
+[18/32] 导出表: chat_records
+2025-11-13 22:12:55,569 - INFO - 开始导出表 chat_records，记录数: 102
+2025-11-13 22:12:55,577 - INFO - ✓ 表 chat_records 导出完成: 102 条记录 -> migration_data\chat_records.sql
+2025-11-13 22:12:55,578 - INFO - 
+[19/32] 导出表: collections
+2025-11-13 22:12:55,594 - INFO - 开始导出表 collections，记录数: 25
+2025-11-13 22:12:55,599 - INFO - ✓ 表 collections 导出完成: 25 条记录 -> migration_data\collections.sql
+2025-11-13 22:12:55,600 - INFO - 
+[20/32] 导出表: public_resources
+2025-11-13 22:12:55,615 - INFO - 表 public_resources 无数据，跳过
+2025-11-13 22:12:55,616 - INFO - 
+[21/32] 导出表: vocabulary_words
+2025-11-13 22:12:55,622 - INFO - 开始导出表 vocabulary_words，记录数: 522
+2025-11-13 22:12:55,639 - INFO - ✓ 表 vocabulary_words 导出完成: 522 条记录 -> migration_data\vocabulary_words.sql
+2025-11-13 22:12:55,639 - INFO - 
+[22/32] 导出表: user_word_progress
+2025-11-13 22:12:55,655 - INFO - 开始导出表 user_word_progress，记录数: 213
+2025-11-13 22:12:55,671 - INFO - ✓ 表 user_word_progress 导出完成: 213 条记录 -> migration_data\user_word_progress.sql
+2025-11-13 22:12:55,672 - INFO - 
+[23/32] 导出表: article_used_words
+2025-11-13 22:12:55,676 - INFO - 开始导出表 article_used_words，记录数: 127
+2025-11-13 22:12:55,684 - INFO - ✓ 表 article_used_words 导出完成: 127 条记录 -> migration_data\article_used_words.sql
+2025-11-13 22:12:55,684 - INFO - 
+[24/32] 导出表: chat_session_titles
+2025-11-13 22:12:55,702 - INFO - 表 chat_session_titles 无数据，跳过
+2025-11-13 22:12:55,703 - INFO - 
+[25/32] 导出表: comments
+2025-11-13 22:12:55,719 - INFO - 表 comments 无数据，跳过
+2025-11-13 22:12:55,721 - INFO - 
+[26/32] 导出表: dislikes
+2025-11-13 22:12:55,739 - INFO - 表 dislikes 无数据，跳过
+2025-11-13 22:12:55,741 - INFO - 
+[27/32] 导出表: feedback
+2025-11-13 22:12:55,758 - INFO - 开始导出表 feedback，记录数: 17
+2025-11-13 22:12:55,764 - INFO - ✓ 表 feedback 导出完成: 17 条记录 -> migration_data\feedback.sql
+2025-11-13 22:12:55,764 - INFO - 
+[28/32] 导出表: files
+2025-11-13 22:12:55,782 - INFO - 开始导出表 files，记录数: 12
+2025-11-13 22:12:55,786 - INFO - ✓ 表 files 导出完成: 12 条记录 -> migration_data\files.sql
+2025-11-13 22:12:55,787 - INFO - 
+[29/32] 导出表: posts
+2025-11-13 22:12:55,804 - INFO - 表 posts 无数据，跳过
+2025-11-13 22:12:55,806 - INFO - 
+[30/32] 导出表: test_table
+2025-11-13 22:12:55,825 - INFO - 开始导出表 test_table，记录数: 2
+2025-11-13 22:12:55,829 - INFO - ✓ 表 test_table 导出完成: 2 条记录 -> migration_data\test_table.sql
+2025-11-13 22:12:55,830 - INFO - 
+[31/32] 导出表: user_favorites
+2025-11-13 22:12:55,836 - INFO - 开始导出表 user_favorites，记录数: 32
+2025-11-13 22:12:55,842 - INFO - ✓ 表 user_favorites 导出完成: 32 条记录 -> migration_data\user_favorites.sql
+2025-11-13 22:12:55,843 - INFO - 
+[32/32] 导出表: user_settings
+2025-11-13 22:12:55,859 - INFO - 开始导出表 user_settings，记录数: 2
+2025-11-13 22:12:55,863 - INFO - ✓ 表 user_settings 导出完成: 2 条记录 -> migration_data\user_settings.sql
+2025-11-13 22:12:55,865 - INFO - 
+================================================================================
+2025-11-13 22:12:55,865 - INFO - 导出摘要
+2025-11-13 22:12:55,866 - INFO - ================================================================================
+2025-11-13 22:12:55,866 - INFO - 总表数: 32
+2025-11-13 22:12:55,866 - INFO - 成功导出: 32
+2025-11-13 22:12:55,866 - INFO - 失败表数: 0
+2025-11-13 22:12:55,867 - INFO - 总记录数: 2604
+2025-11-13 22:12:55,867 - INFO - 成功导出记录数: 2604
+2025-11-13 22:12:55,867 - INFO - 输出目录: migration_data
+2025-11-13 22:12:55,867 - INFO - 元数据文件: migration_data\migration_metadata.json
+2025-11-13 22:12:55,867 - INFO - ================================================================================
+2025-11-13 22:12:55,867 - INFO - 
+✓ 导出完成！
+2025-11-13 22:12:55,867 - INFO - 数据文件目录: migration_data
+2025-11-13 22:12:55,867 - INFO - 
+下一步: 使用以下命令导入数据:
+2025-11-13 22:12:55,869 - INFO - python py/script/数据库迁移/migrate_all_data.py import --target-db "<目标数据库URL>" --data-dir "migration_data"

@@ -1,0 +1,140 @@
+2025-11-13 22:36:53,487 - INFO - ================================================================================
+2025-11-13 22:36:53,488 - INFO - 开始数据导出
+2025-11-13 22:36:53,488 - INFO - 源数据库: localhost/ipv6_education
+2025-11-13 22:36:53,488 - INFO - 输出目录: C:\Users\Administrator\Desktop\data
+2025-11-13 22:36:53,489 - INFO - ================================================================================
+2025-11-13 22:36:53,506 - INFO - ✓ 源数据库连接成功
+2025-11-13 22:36:53,510 - INFO - 将导出 32 个表
+2025-11-13 22:36:53,511 - INFO - 导出顺序: users, categories, vocabulary_lists, public_vocabulary_words, vocabulary_upload_tasks, admins, verification_codes, custom_ai_models, notes, user_folders, user_files, chat_sessions, resources, feedbacks, user_learning_records, generated_articles, file_shares, chat_records, collections, public_resources, vocabulary_words, user_word_progress, article_used_words, chat_session_titles, comments, dislikes, feedback, files, posts, test_table, user_favorites, user_settings
+2025-11-13 22:36:53,511 - INFO - --------------------------------------------------------------------------------
+2025-11-13 22:36:53,511 - INFO - 
+[1/32] 导出表: users
+2025-11-13 22:36:53,517 - INFO - 开始导出表 users，记录数: 6
+2025-11-13 22:36:53,533 - INFO - ✓ 表 users 导出完成: 6 条记录 -> C:\Users\Administrator\Desktop\data\users.sql
+2025-11-13 22:36:53,533 - INFO - 
+[2/32] 导出表: categories
+2025-11-13 22:36:53,540 - INFO - 开始导出表 categories，记录数: 11
+2025-11-13 22:36:53,544 - INFO - ✓ 表 categories 导出完成: 11 条记录 -> C:\Users\Administrator\Desktop\data\categories.sql
+2025-11-13 22:36:53,544 - INFO - 
+[3/32] 导出表: vocabulary_lists
+2025-11-13 22:36:53,551 - INFO - 开始导出表 vocabulary_lists，记录数: 6
+2025-11-13 22:36:53,555 - INFO - ✓ 表 vocabulary_lists 导出完成: 6 条记录 -> C:\Users\Administrator\Desktop\data\vocabulary_lists.sql
+2025-11-13 22:36:53,556 - INFO - 
+[4/32] 导出表: public_vocabulary_words
+2025-11-13 22:36:53,560 - INFO - 开始导出表 public_vocabulary_words，记录数: 981
+2025-11-13 22:36:53,603 - INFO - ✓ 表 public_vocabulary_words 导出完成: 981 条记录 -> C:\Users\Administrator\Desktop\data\public_vocabulary_words.sql
+2025-11-13 22:36:53,605 - INFO - 
+[5/32] 导出表: vocabulary_upload_tasks
+2025-11-13 22:36:53,610 - INFO - 开始导出表 vocabulary_upload_tasks，记录数: 2
+2025-11-13 22:36:53,615 - INFO - ✓ 表 vocabulary_upload_tasks 导出完成: 2 条记录 -> C:\Users\Administrator\Desktop\data\vocabulary_upload_tasks.sql
+2025-11-13 22:36:53,615 - INFO - 
+[6/32] 导出表: admins
+2025-11-13 22:36:53,620 - INFO - 开始导出表 admins，记录数: 1
+2025-11-13 22:36:53,623 - INFO - ✓ 表 admins 导出完成: 1 条记录 -> C:\Users\Administrator\Desktop\data\admins.sql
+2025-11-13 22:36:53,625 - INFO - 
+[7/32] 导出表: verification_codes
+2025-11-13 22:36:53,630 - INFO - 开始导出表 verification_codes，记录数: 1
+2025-11-13 22:36:53,634 - INFO - ✓ 表 verification_codes 导出完成: 1 条记录 -> C:\Users\Administrator\Desktop\data\verification_codes.sql
+2025-11-13 22:36:53,634 - INFO - 
+[8/32] 导出表: custom_ai_models
+2025-11-13 22:36:53,639 - INFO - 开始导出表 custom_ai_models，记录数: 1
+2025-11-13 22:36:53,643 - INFO - ✓ 表 custom_ai_models 导出完成: 1 条记录 -> C:\Users\Administrator\Desktop\data\custom_ai_models.sql
+2025-11-13 22:36:53,644 - INFO - 
+[9/32] 导出表: notes
+2025-11-13 22:36:53,649 - INFO - 开始导出表 notes，记录数: 1
+2025-11-13 22:36:53,653 - INFO - ✓ 表 notes 导出完成: 1 条记录 -> C:\Users\Administrator\Desktop\data\notes.sql
+2025-11-13 22:36:53,654 - INFO - 
+[10/32] 导出表: user_folders
+2025-11-13 22:36:53,658 - INFO - 开始导出表 user_folders，记录数: 3
+2025-11-13 22:36:53,662 - INFO - ✓ 表 user_folders 导出完成: 3 条记录 -> C:\Users\Administrator\Desktop\data\user_folders.sql
+2025-11-13 22:36:53,663 - INFO - 
+[11/32] 导出表: user_files
+2025-11-13 22:36:53,667 - INFO - 表 user_files 无数据，跳过
+2025-11-13 22:36:53,669 - INFO - 
+[12/32] 导出表: chat_sessions
+2025-11-13 22:36:53,673 - INFO - 表 chat_sessions 无数据，跳过
+2025-11-13 22:36:53,674 - INFO - 
+[13/32] 导出表: resources
+2025-11-13 22:36:53,679 - INFO - 开始导出表 resources，记录数: 7
+2025-11-13 22:36:53,683 - INFO - ✓ 表 resources 导出完成: 7 条记录 -> C:\Users\Administrator\Desktop\data\resources.sql
+2025-11-13 22:36:53,684 - INFO - 
+[14/32] 导出表: feedbacks
+2025-11-13 22:36:53,688 - INFO - 表 feedbacks 无数据，跳过
+2025-11-13 22:36:53,689 - INFO - 
+[15/32] 导出表: user_learning_records
+2025-11-13 22:36:53,694 - INFO - 开始导出表 user_learning_records，记录数: 498
+2025-11-13 22:36:53,709 - INFO - ✓ 表 user_learning_records 导出完成: 498 条记录 -> C:\Users\Administrator\Desktop\data\user_learning_records.sql
+2025-11-13 22:36:53,709 - INFO - 
+[16/32] 导出表: generated_articles
+2025-11-13 22:36:53,715 - INFO - 开始导出表 generated_articles，记录数: 32
+2025-11-13 22:36:53,721 - INFO - ✓ 表 generated_articles 导出完成: 32 条记录 -> C:\Users\Administrator\Desktop\data\generated_articles.sql
+2025-11-13 22:36:53,722 - INFO - 
+[17/32] 导出表: file_shares
+2025-11-13 22:36:53,725 - INFO - 表 file_shares 无数据，跳过
+2025-11-13 22:36:53,727 - INFO - 
+[18/32] 导出表: chat_records
+2025-11-13 22:36:53,734 - INFO - 开始导出表 chat_records，记录数: 102
+2025-11-13 22:36:53,743 - INFO - ✓ 表 chat_records 导出完成: 102 条记录 -> C:\Users\Administrator\Desktop\data\chat_records.sql
+2025-11-13 22:36:53,744 - INFO - 
+[19/32] 导出表: collections
+2025-11-13 22:36:53,749 - INFO - 开始导出表 collections，记录数: 25
+2025-11-13 22:36:53,754 - INFO - ✓ 表 collections 导出完成: 25 条记录 -> C:\Users\Administrator\Desktop\data\collections.sql
+2025-11-13 22:36:53,755 - INFO - 
+[20/32] 导出表: public_resources
+2025-11-13 22:36:53,759 - INFO - 表 public_resources 无数据，跳过
+2025-11-13 22:36:53,760 - INFO - 
+[21/32] 导出表: vocabulary_words
+2025-11-13 22:36:53,766 - INFO - 开始导出表 vocabulary_words，记录数: 522
+2025-11-13 22:36:53,784 - INFO - ✓ 表 vocabulary_words 导出完成: 522 条记录 -> C:\Users\Administrator\Desktop\data\vocabulary_words.sql
+2025-11-13 22:36:53,785 - INFO - 
+[22/32] 导出表: user_word_progress
+2025-11-13 22:36:53,790 - INFO - 开始导出表 user_word_progress，记录数: 213
+2025-11-13 22:36:53,804 - INFO - ✓ 表 user_word_progress 导出完成: 213 条记录 -> C:\Users\Administrator\Desktop\data\user_word_progress.sql
+2025-11-13 22:36:53,805 - INFO - 
+[23/32] 导出表: article_used_words
+2025-11-13 22:36:53,810 - INFO - 开始导出表 article_used_words，记录数: 127
+2025-11-13 22:36:53,817 - INFO - ✓ 表 article_used_words 导出完成: 127 条记录 -> C:\Users\Administrator\Desktop\data\article_used_words.sql
+2025-11-13 22:36:53,818 - INFO - 
+[24/32] 导出表: chat_session_titles
+2025-11-13 22:36:53,822 - INFO - 表 chat_session_titles 无数据，跳过
+2025-11-13 22:36:53,823 - INFO - 
+[25/32] 导出表: comments
+2025-11-13 22:36:53,827 - INFO - 表 comments 无数据，跳过
+2025-11-13 22:36:53,829 - INFO - 
+[26/32] 导出表: dislikes
+2025-11-13 22:36:53,832 - INFO - 表 dislikes 无数据，跳过
+2025-11-13 22:36:53,834 - INFO - 
+[27/32] 导出表: feedback
+2025-11-13 22:36:53,840 - INFO - 开始导出表 feedback，记录数: 17
+2025-11-13 22:36:53,844 - INFO - ✓ 表 feedback 导出完成: 17 条记录 -> C:\Users\Administrator\Desktop\data\feedback.sql
+2025-11-13 22:36:53,845 - INFO - 
+[28/32] 导出表: files
+2025-11-13 22:36:53,850 - INFO - 开始导出表 files，记录数: 12
+2025-11-13 22:36:53,854 - INFO - ✓ 表 files 导出完成: 12 条记录 -> C:\Users\Administrator\Desktop\data\files.sql
+2025-11-13 22:36:53,854 - INFO - 
+[29/32] 导出表: posts
+2025-11-13 22:36:53,860 - INFO - 表 posts 无数据，跳过
+2025-11-13 22:36:53,862 - INFO - 
+[30/32] 导出表: test_table
+2025-11-13 22:36:53,866 - INFO - 开始导出表 test_table，记录数: 2
+2025-11-13 22:36:53,870 - INFO - ✓ 表 test_table 导出完成: 2 条记录 -> C:\Users\Administrator\Desktop\data\test_table.sql
+2025-11-13 22:36:53,870 - INFO - 
+[31/32] 导出表: user_favorites
+2025-11-13 22:36:53,875 - INFO - 开始导出表 user_favorites，记录数: 32
+2025-11-13 22:36:53,880 - INFO - ✓ 表 user_favorites 导出完成: 32 条记录 -> C:\Users\Administrator\Desktop\data\user_favorites.sql
+2025-11-13 22:36:53,880 - INFO - 
+[32/32] 导出表: user_settings
+2025-11-13 22:36:53,885 - INFO - 开始导出表 user_settings，记录数: 2
+2025-11-13 22:36:53,889 - INFO - ✓ 表 user_settings 导出完成: 2 条记录 -> C:\Users\Administrator\Desktop\data\user_settings.sql
+2025-11-13 22:36:53,891 - INFO - 
+================================================================================
+2025-11-13 22:36:53,892 - INFO - 导出摘要
+2025-11-13 22:36:53,892 - INFO - ================================================================================
+2025-11-13 22:36:53,892 - INFO - 总表数: 32
+2025-11-13 22:36:53,892 - INFO - 成功导出: 32
+2025-11-13 22:36:53,892 - INFO - 失败表数: 0
+2025-11-13 22:36:53,892 - INFO - 总记录数: 2604
+2025-11-13 22:36:53,892 - INFO - 成功导出记录数: 2604
+2025-11-13 22:36:53,893 - INFO - 输出目录: C:\Users\Administrator\Desktop\data
+2025-11-13 22:36:53,893 - INFO - 元数据文件: C:\Users\Administrator\Desktop\data\migration_metadata.json
+2025-11-13 22:36:53,893 - INFO - ================================================================================

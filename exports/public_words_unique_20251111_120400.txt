@@ -1,0 +1,982 @@
+id,word,language,definition,part_of_speech,example,tag,usage_count,created_at,updated_at
+429,"a",en,"一个（不定冠词）","article","She bought a new book.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+497,"abandon",en,"放弃","verb","He decided to abandon his car and walk.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1083,"aberrant",en,"异常的，偏离常规的","adjective","His aberrant behavior worried his friends.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1179,"abeyance",en,"中止，暂缓","noun","The project is in abeyance until funding is approved.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+498,"ability",en,"能力","noun","She has the ability to solve complex problems.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1180,"abnegate",en,"放弃，拒绝","verb","She decided to abnegate her claim to the inheritance.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1084,"abnegation",en,"自我克制，放弃","noun","Her abnegation of luxury impressed everyone.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+499,"abnormal",en,"异常的","adjective","The test results were abnormal.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+500,"abolish",en,"废除","verb","The government plans to abolish the old law.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+501,"abroad",en,"在国外","adverb","She loves traveling abroad.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1085,"abrogate",en,"废除，取消","verb","The government decided to abrogate the treaty.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1086,"abscond",en,"潜逃，偷偷离开","verb","The thief absconded with the jewels.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+502,"absence",en,"缺席","noun","His absence was noticed by everyone.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+503,"absolute",en,"绝对的","adjective","He has absolute confidence in his team.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+504,"absorb",en,"吸收","verb","Plants absorb water from the soil.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1087,"abstemious",en,"有节制的，节俭的","adjective","He led an abstemious lifestyle.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+505,"abstract",en,"抽象的","adjective","The concept is too abstract for children.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+347,"abundant",en,"丰富的，充裕的","adjective","The region has abundant natural resources.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+506,"academic",en,"学术的","adjective","She has a strong academic background.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+507,"accelerate",en,"加速","verb","The car accelerated quickly on the highway.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+508,"accent",en,"口音","noun","He has a British accent.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+509,"accept",en,"接受","verb","I accept your apology.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+434,"access",en,"进入；使用权；访问","noun","Students have access to the library resources.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+510,"accident",en,"事故","noun","He was injured in a car accident.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1181,"accolade",en,"荣誉，赞扬","noun","She received many accolades for her work.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+448,"accommodate",en,"容纳，适应","verb","The hotel can accommodate up to 200 guests.","六级",0,2025-11-06 05:12:58,2025-11-06 05:12:58
+1008,"accommodation",en,"住宿","noun","The university provides accommodation for international students.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+511,"accompany",en,"陪伴","verb","She will accompany me to the party.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+512,"accomplish",en,"完成","verb","We accomplished our goal on time.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+513,"accord",en,"一致","noun","The decision was in accord with the rules.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+634,"accordance",en,"一致","noun","We acted in accordance with the rules.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+514,"account",en,"账户","noun","I opened a bank account yesterday.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+515,"accumulate",en,"积累","verb","He has accumulated a lot of wealth.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+370,"accurate",en,"准确的；精确的","adjective","His watch is very accurate.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+516,"accuse",en,"指责","verb","He was accused of stealing.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1182,"acerbic",en,"尖刻的，辛辣的","adjective","His acerbic comments offended many.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+517,"achieve",en,"实现","verb","She worked hard to achieve her dreams.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+518,"acid",en,"酸","noun","Vinegar contains acetic acid.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+519,"acknowledge",en,"承认","verb","He acknowledged his mistake.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+520,"acquire",en,"获得","verb","She acquired new skills quickly.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+449,"acquisition",en,"获得，收购","noun","The company announced the acquisition of a smaller firm.","六级",0,2025-11-06 05:12:58,2025-11-06 05:12:58
+521,"across",en,"穿过","preposition","We walked across the bridge.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+335,"act",en,"行动，表演","verb","We must act quickly to solve this problem.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+391,"action",en,"行动，行为，动作","noun","The government must take action to solve this problem.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+297,"active",en,"活跃的；积极的；主动的","adjective","She maintains an active lifestyle with regular exercise.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+522,"activity",en,"活动","noun","The school offers many extracurricular activities.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+314,"actual",en,"实际的；真实的","adjective","The actual cost was higher than we expected.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+412,"actually",en,"实际上，事实上","adverb","I thought he was French, but actually he's Belgian.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+1088,"acumen",en,"敏锐，聪明","noun","Her business acumen helped the company grow.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+523,"adapt",en,"适应","verb","Animals adapt to their environment.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+759,"adaptation",en,"适应，改编","noun","The film is an adaptation of a famous novel.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+524,"add",en,"添加","verb","Please add sugar to the tea.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+525,"addict",en,"上瘾者","noun","He is a drug addict.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+526,"addition",en,"加法","noun","The child is learning addition in math.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+527,"address",en,"地址","noun","What is your home address?","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+528,"adequate",en,"足够的","adjective","The food supply is adequate for the trip.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+641,"adjacent",en,"邻近的，毗连的","adjective","The park is adjacent to the school.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+529,"adjust",en,"调整","verb","You need to adjust the settings.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+760,"adjustment",en,"调整，调节","noun","She made a small adjustment to the plan.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+530,"administration",en,"管理","noun","The administration of the company is efficient.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+531,"admire",en,"钦佩","verb","I admire her courage.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+532,"admit",en,"承认","verb","He admitted that he was wrong.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1089,"admonish",en,"告诫，警告","verb","The teacher admonished the student for being late.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+209,"adolescence",en,"青春期","noun","Many changes occur during adolescence.","",7,2025-11-02 16:53:45,2025-11-05 15:19:07
+299,"adolescent",en,"青少年；青春期的","noun/adjective","Adolescent development involves many physical and emotional changes.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+533,"adopt",en,"采用","verb","The company adopted a new policy.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1090,"adroit",en,"灵巧的，熟练的","adjective","She is adroit at solving puzzles.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+534,"adult",en,"成年人","noun","Only adults are allowed to vote.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+535,"advance",en,"前进","verb","The army advanced toward the enemy.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+536,"advantage",en,"优势","noun","Her experience gives her an advantage.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+537,"adventure",en,"冒险","noun","They went on an adventure in the jungle.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+450,"adverse",en,"不利的，有害的","adjective","The drug has no adverse effects.","六级",0,2025-11-06 05:12:58,2025-11-06 05:12:58
+538,"advertise",en,"广告","verb","They advertise their products on TV.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+539,"advice",en,"建议","noun","She gave me good advice.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+540,"advise",en,"建议","verb","I advise you to study hard.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+451,"advocate",en,"提倡，拥护者","verb","She advocates for environmental protection.","六级",0,2025-11-06 05:12:58,2025-11-06 05:12:58
+452,"aesthetic",en,"美学的，审美的","adjective","The building has a modern aesthetic design.","六级",0,2025-11-06 05:12:58,2025-11-06 05:12:58
+541,"affair",en,"事务","noun","The minister handled the affair carefully.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+542,"affect",en,"影响","verb","The weather can affect your mood.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+642,"affection",en,"喜爱，感情","noun","She showed affection for her pet.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+453,"affiliate",en,"附属机构，使隶属","noun","The university has many affiliate colleges.","六级",0,2025-11-06 05:12:58,2025-11-06 05:12:58
+698,"affluent",en,"富裕的，丰富的","adjective","They live in an affluent neighborhood.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+543,"afford",en,"负担得起","verb","I can't afford a new car.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+544,"afraid",en,"害怕的","adjective","She is afraid of spiders.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+545,"after",en,"在...之后","preposition","We will meet after the movie.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+546,"afternoon",en,"下午","noun","I have a meeting in the afternoon.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+547,"again",en,"再次","adverb","Please say that again.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+548,"against",en,"反对","preposition","They are against the proposal.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+549,"age",en,"年龄","noun","What is your age?","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+550,"agency",en,"机构","noun","She works for a travel agency.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+551,"agenda",en,"议程","noun","The meeting agenda is full.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+552,"agent",en,"代理人","noun","He is a real estate agent.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+699,"aggravate",en,"加重，恶化","verb","Smoking can aggravate health problems.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+454,"aggregate",en,"总计，集合","noun","The aggregate score was 100 points.","六级",0,2025-11-06 05:12:58,2025-11-06 05:12:58
+394,"aggressive",en,"侵略性的，有进取心的","adjective","The company has an aggressive marketing strategy.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+553,"ago",en,"以前","adverb","He left ten minutes ago.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+554,"agree",en,"同意","verb","I agree with your opinion.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+555,"agreement",en,"协议","noun","They signed a business agreement.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+556,"agriculture",en,"农业","noun","Agriculture is important for the economy.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+557,"ahead",en,"在前面","adverb","The road ahead is clear.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+558,"aid",en,"援助","noun","The country received foreign aid.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+559,"aim",en,"目标","noun","His aim is to become a doctor.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+403,"air",en,"空气；大气","noun","The fresh morning air felt invigorating.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+560,"aircraft",en,"飞机","noun","The aircraft landed safely.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+561,"airline",en,"航空公司","noun","I booked a flight with that airline.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+562,"airport",en,"机场","noun","We arrived at the airport early.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1091,"alacrity",en,"敏捷，乐意","noun","He accepted the offer with alacrity.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+563,"alarm",en,"警报","noun","The fire alarm woke everyone up.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+966,"albeit",en,"尽管，虽然","conjunction","He agreed, albeit reluctantly.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+564,"alcohol",en,"酒精","noun","He doesn't drink alcohol.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+565,"alert",en,"警觉的","adjective","The guard is always alert.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1082,"algorithm",en,"算法","noun","The computer uses an algorithm to solve problems.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+635,"alien",en,"外国的","adjective","The culture seemed alien to him.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+566,"alive",en,"活着的","adjective","The plant is still alive.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+567,"all",en,"所有的","adjective","All students must attend the lecture.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+636,"allege",en,"声称","verb","He alleged that he was innocent.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+455,"alleviate",en,"减轻，缓解","verb","This medicine can alleviate pain.","六级",0,2025-11-06 05:12:58,2025-11-06 05:12:58
+588,"alliance",en,"联盟","noun","The two countries formed an alliance.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+637,"allocate",en,"分配","verb","We need to allocate resources wisely.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+568,"allow",en,"允许","verb","My parents allow me to go out.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+638,"ally",en,"盟友","noun","The two countries are allies.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+569,"almost",en,"几乎","adverb","I almost forgot your birthday.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+570,"alone",en,"单独的","adjective","She lives alone in the apartment.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+571,"along",en,"沿着","preposition","We walked along the river.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+572,"aloud",en,"大声地","adverb","Please read the text aloud.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+573,"already",en,"已经","adverb","He has already finished his homework.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+574,"also",en,"也","adverb","She is also a talented musician.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+575,"alter",en,"改变","verb","We need to alter our plans.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+576,"alternative",en,"替代的","adjective","We are looking for alternative solutions.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+577,"although",en,"虽然","conjunction","Although it was raining, we went out.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+578,"altogether",en,"完全","adverb","The idea is altogether wrong.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+579,"always",en,"总是","adverb","He always arrives on time.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+290,"am",en,"是（be动词第一人称单数现在式）","verb","I am a student.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+580,"amaze",en,"使惊讶","verb","The magic trick amazed the audience.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+456,"ambiguous",en,"模糊的，不明确的","adjective","His answer was ambiguous and confusing.","六级",0,2025-11-06 05:12:58,2025-11-06 05:12:58
+581,"ambition",en,"雄心","noun","Her ambition is to become a leader.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+457,"ambitious",en,"有雄心的，野心勃勃的","adjective","She has ambitious plans for her career.","六级",0,2025-11-06 05:12:58,2025-11-06 05:12:58
+1092,"ameliorate",en,"改善，改进","verb","We need to ameliorate the situation.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+458,"amend",en,"修改，修正","verb","They decided to amend the contract.","六级",0,2025-11-06 05:12:58,2025-11-06 05:12:58
+582,"among",en,"在...之中","preposition","She is among the best students.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+322,"amount",en,"数量；总额","noun","The amount of rainfall this year is exceptional.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+411,"ample",en,"充足的，丰富的","adjective","We have ample time to finish the project.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+741,"amplify",en,"放大，增强","verb","The microphone amplifies sound.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+583,"amuse",en,"使娱乐","verb","The clown amused the children.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+266,"an",en,"一个（用于元音音素前）","article","She ate an apple for breakfast.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+1093,"anachronism",en,"时代错误","noun","The clock in the movie was an anachronism.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+459,"analogy",en,"类比，相似","noun","He used an analogy to explain the concept.","六级",0,2025-11-06 05:12:58,2025-11-06 05:12:58
+1009,"analysis",en,"分析","noun","The analysis of the data took several hours.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+584,"analyze",en,"分析","verb","We need to analyze the data carefully.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+343,"ancestor",en,"祖先，祖宗","noun","My ancestors came from Ireland.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+300,"ancient",en,"古代的；古老的","adjective","We studied ancient civilizations in history class.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+276,"and",en,"和，与","conjunction","I like coffee and tea.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+700,"anecdote",en,"轶事，趣闻","noun","He told an amusing anecdote.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+585,"anger",en,"愤怒","noun","His anger was obvious.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+586,"angle",en,"角度","noun","The camera was set at a low angle.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+587,"animal",en,"动物","noun","The zoo has many animals.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+643,"anniversary",en,"周年纪念","noun","They celebrated their wedding anniversary.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+589,"announce",en,"宣布","verb","They announced the winner.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+590,"annoy",en,"使烦恼","verb","The noise annoys me.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+591,"annual",en,"每年的","adjective","We have an annual meeting.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+791,"anomaly",en,"异常，反常","noun","The test results showed an anomaly that needs investigation.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+701,"anonymous",en,"匿名的，无名的","adjective","The donation was anonymous.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+460,"anticipate",en,"预期，预料","verb","We anticipate a positive response.","六级",0,2025-11-06 05:12:58,2025-11-06 05:12:58
+1094,"antipathy",en,"反感，厌恶","noun","He felt antipathy towards his rival.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+291,"ants",en,"蚂蚁（复数）","noun","There are many ants in the garden.","",1,2025-11-04 03:53:43,2025-11-04 03:53:43
+592,"anxiety",en,"焦虑","noun","She felt anxiety before the test.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1095,"apathy",en,"冷漠，无兴趣","noun","Her apathy towards politics was evident.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1096,"apocryphal",en,"伪造的，可疑的","adjective","The story is apocryphal.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+593,"apologize",en,"道歉","verb","He apologized for being late.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+743,"apology",en,"道歉，认错","noun","She offered a sincere apology for her mistake.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+702,"apparatus",en,"器械，设备","noun","The laboratory has modern apparatus.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+594,"apparent",en,"明显的","adjective","It was apparent that he was lying.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+595,"appeal",en,"呼吁","verb","They appealed for help.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+596,"appear",en,"出现","verb","The sun appeared from behind the clouds.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+967,"append",en,"附加，添加","verb","Please append your signature here.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+597,"appetite",en,"食欲","noun","He has a good appetite.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+598,"applaud",en,"鼓掌","verb","The audience applauded the performance.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+703,"appliance",en,"器具，装置","noun","Modern appliances save time.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+704,"applicable",en,"适用的，合适的","adjective","This rule is applicable to all.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+768,"applicant",en,"申请人","noun","There were many applicants for the job.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+599,"apply",en,"申请","verb","She applied for a job.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+600,"appoint",en,"任命","verb","They appointed a new manager.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+601,"appreciate",en,"欣赏","verb","I appreciate your help.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+461,"apprehensive",en,"忧虑的，担心的","adjective","She felt apprehensive about the exam.","六级",0,2025-11-06 05:12:58,2025-11-06 05:12:58
+602,"approach",en,"接近","verb","He approached the door slowly.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1097,"approbation",en,"批准，认可","noun","The plan received approbation from the board.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+603,"appropriate",en,"合适的","adjective","Wear appropriate clothing for the event.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+604,"approve",en,"批准","verb","The committee approved the proposal.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+605,"approximate",en,"近似的","adjective","Give me an approximate number.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+644,"arbitrary",en,"任意的，武断的","adjective","The decision seemed arbitrary.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1193,"arcane",en,"神秘的，晦涩的","adjective","He studied arcane texts.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+705,"architect",en,"建筑师","noun","The architect designed the building.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1098,"arduous",en,"艰巨的，费力的","adjective","The journey was arduous.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+784,"area",en,"区域，领域","noun","This area is reserved for parking.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+606,"argue",en,"争论","verb","They argued about politics.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+815,"argument",en,"论点","noun","His argument was well-supported.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+607,"arise",en,"出现","verb","Problems may arise during the project.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+608,"arouse",en,"唤起","verb","The story aroused her curiosity.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+609,"arrange",en,"安排","verb","She arranged the meeting.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+610,"arrest",en,"逮捕","verb","The police arrested the suspect.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+639,"arrive",en,"到达","verb","They arrive at the station.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+462,"articulate",en,"清晰地表达","verb","He can articulate his ideas well.","六级",0,2025-11-06 05:12:58,2025-11-06 05:12:58
+611,"artificial",en,"人造的","adjective","The flowers are artificial.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+381,"as",en,"作为；如同；当...时","conjunction","She works as a teacher.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+387,"ascend",en,"上升，攀登","verb","The hikers began to ascend the mountain at dawn.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+463,"ascertain",en,"查明，确定","verb","We need to ascertain the facts.","六级",0,2025-11-06 05:12:58,2025-11-06 05:12:58
+1099,"ascetic",en,"禁欲的，苦行的","adjective","He lived an ascetic life.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+769,"ascribe",en,"归因于","verb","He ascribed his success to hard work.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+612,"ashamed",en,"羞愧的","adjective","He felt ashamed of his behavior.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+613,"aspect",en,"方面","noun","Consider every aspect of the problem.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+464,"aspiration",en,"渴望，抱负","noun","Her aspiration is to become a doctor.","六级",0,2025-11-06 05:12:58,2025-11-06 05:12:58
+706,"aspire",en,"渴望，立志","verb","He aspires to be a doctor.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+614,"assemble",en,"组装","verb","They assembled the furniture.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+465,"assert",en,"断言，主张","verb","He asserted his innocence.","六级",0,2025-11-06 05:12:58,2025-11-06 05:12:58
+258,"assess",en,"评估，评定","verb","The teacher will assess the students' projects tomorrow.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+645,"asset",en,"资产，优点","noun","Her experience is a valuable asset.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1100,"assiduous",en,"勤勉的，刻苦的","adjective","She is assiduous in her studies.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+615,"assign",en,"分配","verb","The teacher assigned homework.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+466,"assimilate",en,"吸收，同化","verb","It takes time to assimilate new information.","六级",0,2025-11-06 05:12:58,2025-11-06 05:12:58
+616,"assist",en,"协助","verb","Can you assist me with this task?","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+744,"associate",en,"联系，伙伴","verb","People often associate rain with sadness.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+617,"assume",en,"假设","verb","Let's assume he is right.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+816,"assumption",en,"假设","noun","The theory is based on a false assumption.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+721,"assurance",en,"保证，确信","noun","He gave me his assurance that it would be done.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+618,"assure",en,"保证","verb","I assure you it will be fine.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+640,"astonish",en,"使惊讶","verb","The news astonished everyone.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+745,"astronomy",en,"天文学","noun","She studies astronomy at university.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1183,"astute",en,"精明的，敏锐的","adjective","He made an astute observation.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+746,"athlete",en,"运动员","noun","The athlete trained hard for the competition.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+619,"atmosphere",en,"气氛","noun","The atmosphere was tense.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+620,"attach",en,"附加","verb","Attach the file to the email.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+621,"attain",en,"达到","verb","She attained her goals.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+622,"attempt",en,"尝试","verb","He attempted to solve the puzzle.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+623,"attend",en,"参加","verb","She will attend the conference.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+624,"attitude",en,"态度","noun","He has a positive attitude.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+625,"attract",en,"吸引","verb","The show attracted many viewers.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+467,"attribute",en,"属性，归因于","noun","Kindness is a positive attribute.","六级",0,2025-11-06 05:12:58,2025-11-06 05:12:58
+1101,"audacious",en,"大胆的，鲁莽的","adjective","His audacious plan surprised everyone.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+626,"audience",en,"观众","noun","The audience clapped loudly.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1102,"austere",en,"朴素的，严峻的","adjective","The room was austere and simple.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+468,"authentic",en,"真实的，可信的","adjective","This is an authentic antique.","六级",0,2025-11-06 05:12:58,2025-11-06 05:12:58
+627,"authority",en,"权威","noun","He has no authority here.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+628,"automatic",en,"自动的","adjective","The door is automatic.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+469,"autonomous",en,"自治的，自主的","adjective","The region is an autonomous province.","六级",0,2025-11-06 05:12:58,2025-11-06 05:12:58
+275,"available",en,"可用的，可获得的","adjective","The manager is available for a meeting this afternoon.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+1103,"avarice",en,"贪婪","noun","His avarice led to his downfall.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+629,"average",en,"平均的","adjective","The average temperature is 20°C.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+630,"avoid",en,"避免","verb","Try to avoid mistakes.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+631,"award",en,"奖项","noun","She won an award for her work.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+632,"aware",en,"意识到的","adjective","He is aware of the risks.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+633,"awkward",en,"尴尬的","adjective","It was an awkward situation.","四级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+707,"bachelor",en,"学士，单身汉","noun","He is a bachelor of science.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+708,"background",en,"背景，经历","noun","Check his educational background.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+747,"bacteria",en,"细菌","noun","Bacteria can cause infections.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+736,"balance",en,"平衡，余额","noun","Maintain a healthy balance.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+748,"ban",en,"禁止，禁令","verb","The city may ban plastic bags.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1104,"banal",en,"平庸的，陈腐的","adjective","The speech was banal and uninteresting.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+274,"band",en,"乐队，带子","noun","The rock band performed at the concert last night.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+426,"bandage",en,"绷带","noun","She wrapped a bandage around her injured ankle.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+749,"bankrupt",en,"破产的","adjective","The company went bankrupt last year.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+709,"bargain",en,"讨价还价，便宜货","verb","They bargained for a lower price.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+646,"barrier",en,"障碍，屏障","noun","Language can be a barrier.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+710,"basis",en,"基础，根据","noun","Trust is the basis of friendship.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+750,"batch",en,"一批，一组","noun","We baked a batch of cookies.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+751,"beam",en,"光束，横梁","noun","The sun's beam lit up the room.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+752,"bear",en,"忍受，熊","verb","She can't bear the cold weather.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+436,"begining",en,"开始，开端，起点","noun","The beginning of the movie was very exciting.","",1,2025-11-05 15:19:07,2025-11-05 15:19:07
+753,"behalf",en,"代表，利益","noun","I am speaking on behalf of the team.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+351,"behave",en,"表现，举止","verb","Children should learn to behave properly in public.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+711,"behavior",en,"行为，举止","noun","Good behavior is expected.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+754,"belief",en,"信念，信仰","noun","She has a strong belief in justice.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1105,"belligerent",en,"好战的，挑衅的","adjective","The belligerent nation started the war.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+647,"beneficial",en,"有益的，有利的","adjective","Exercise is beneficial for health.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+648,"benefit",en,"益处，好处","noun","The benefit of exercise is clear.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+470,"benevolent",en,"仁慈的，慈善的","adjective","He is known for his benevolent nature.","六级",0,2025-11-06 05:12:58,2025-11-06 05:12:58
+236,"bet",en,"打赌；赌注","verb","I bet you can't finish the race.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+755,"betray",en,"背叛，出卖","verb","He felt betrayed by his friend.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+756,"beverage",en,"饮料","noun","Coffee is a popular beverage worldwide.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+324,"beyond",en,"在…之外；超出","preposition","The mountains lie beyond the valley.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+471,"bias",en,"偏见，偏爱","noun","The article shows a clear bias.","六级",0,2025-11-06 05:12:58,2025-11-06 05:12:58
+757,"bibliography",en,"参考文献","noun","The paper includes a long bibliography.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+758,"bilateral",en,"双边的","adjective","The two countries signed a bilateral agreement.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+770,"bitter",en,"苦的","adjective","The medicine tastes bitter.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+737,"blame",en,"责备，归咎","verb","Don't blame others.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+380,"blend",en,"混合；融合","verb","Blend the ingredients until smooth.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+771,"bless",en,"祝福","verb","May God bless you.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+772,"bloom",en,"开花","verb","Flowers bloom in spring.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+773,"blunder",en,"大错","noun","He made a serious blunder.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+774,"boast",en,"吹嘘","verb","He boasts about his wealth.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+775,"bold",en,"大胆的","adjective","She made a bold decision.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1059,"bolster",en,"支持","verb","The new evidence bolstered his case.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1106,"bombastic",en,"夸夸其谈的","adjective","His bombastic speech bored the audience.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+649,"bond",en,"纽带，债券","noun","They have a strong bond.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+776,"bonus",en,"奖金","noun","Employees received a year-end bonus.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+777,"boom",en,"繁荣","noun","The economy experienced a boom.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+650,"boost",en,"提高，推动","verb","The ad boosted sales.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+778,"bother",en,"打扰","verb","Don't bother me now.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+712,"boundary",en,"边界，界限","noun","Respect personal boundaries.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+713,"breed",en,"繁殖，品种","verb","Some animals breed quickly.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+399,"bridge",en,"桥梁，桥牌","noun","The Golden Gate Bridge is a famous landmark in San Francisco.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+651,"brief",en,"简短的，短暂的","adjective","He gave a brief speech.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+714,"brilliant",en,"灿烂的，杰出的","adjective","She gave a brilliant performance.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+779,"brisk",en,"轻快的","adjective","We took a brisk walk.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+780,"brittle",en,"易碎的","adjective","The glass is brittle.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+738,"broadcast",en,"广播，播送","verb","They broadcast the news.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+715,"browse",en,"浏览，随意翻阅","verb","I like to browse in bookstores.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+781,"brutal",en,"残忍的","adjective","The attack was brutal.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+716,"budget",en,"预算","noun","Stick to your budget.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+652,"bulk",en,"大部分，体积","noun","The bulk of the work is done.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+717,"burden",en,"负担，重负","noun","He carried a heavy burden.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+761,"bureaucracy",en,"官僚制度","noun","The bureaucracy slows down the process.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+249,"burn",en,"燃烧；烧伤","verb","Be careful not to burn the toast.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+1107,"cacophony",en,"刺耳的声音","noun","The cacophony of the city was overwhelming.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+718,"campaign",en,"运动，活动","noun","The election campaign was intense.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1108,"candid",en,"坦率的，直言的","adjective","She gave a candid opinion.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+719,"candidate",en,"候选人，申请者","noun","She is a candidate for the job.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+653,"capable",en,"有能力的，能干的","adjective","She is capable of leading the team.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+654,"capacity",en,"容量，能力","noun","The hall has a large capacity.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+472,"capricious",en,"反复无常的，任性的","adjective","The weather is capricious in spring.","六级",0,2025-11-06 05:12:58,2025-11-06 05:12:58
+655,"capture",en,"捕获，夺取","verb","The photo captures the moment.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+384,"care",en,"关心，照顾，在意","noun","She takes good care of her elderly parents.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+720,"career",en,"职业，生涯","noun","She has a successful career.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1109,"castigate",en,"严厉批评","verb","The manager castigated the employee for the mistake.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+739,"casual",en,"随便的，非正式的","adjective","Wear casual clothes.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+740,"catalog",en,"目录，编目","noun","Check the product catalog.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1110,"catalyst",en,"催化剂，刺激因素","noun","The event was a catalyst for change.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+656,"category",en,"类别，种类","noun","Books are divided into categories.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1111,"caustic",en,"腐蚀性的，刻薄的","adjective","His caustic remarks hurt her feelings.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+657,"cease",en,"停止，结束","verb","The rain ceased suddenly.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+742,"celebrate",en,"庆祝","verb","We celebrate birthdays with cake.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+762,"celebrity",en,"名人，名流","noun","She became a celebrity overnight.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1112,"censure",en,"指责，谴责","verb","The committee censured the official.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+658,"challenge",en,"挑战，质疑","noun","This job is a challenge.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+659,"channel",en,"频道，渠道","noun","Change the TV channel.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+785,"chapter",en,"章节，分会","noun","Read the first chapter of the book.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+660,"characteristic",en,"特征，特点","noun","Honesty is his characteristic.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+763,"charity",en,"慈善，慈善机构","noun","They donated money to a charity.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1113,"charlatan",en,"骗子，庸医","noun","He was exposed as a charlatan.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+786,"chart",en,"图表，航海图","noun","The chart shows population growth.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+787,"chemical",en,"化学的","adjective","The chemical reaction was rapid.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1114,"chicanery",en,"狡辩，欺骗","noun","The contract was full of chicanery.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+764,"chronic",en,"慢性的，长期的","adjective","He suffers from chronic back pain.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+661,"chronological",en,"按时间顺序的","adjective","The events are in chronological order.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+662,"circumstance",en,"环境，情况","noun","Under no circumstances should you go.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+663,"cite",en,"引用，引证","verb","He cited several sources.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+664,"civil",en,"公民的，文明的","adjective","We have civil rights.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+765,"civilization",en,"文明","noun","Ancient Egypt was a great civilization.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+665,"clarify",en,"澄清，阐明","verb","Can you clarify your point?","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+666,"classic",en,"经典的，典型的","adjective","It's a classic novel.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+667,"clause",en,"条款，从句","noun","Read the contract clause.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+668,"client",en,"客户，委托人","noun","The lawyer met with his client.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+669,"climate",en,"气候，风气","noun","The climate is changing.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+233,"climb",en,"爬，攀登","verb","The children love to climb trees.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+788,"code",en,"代码，准则","noun","Programmers write code for software.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1115,"cogent",en,"有说服力的","adjective","She presented a cogent argument.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+473,"coherent",en,"连贯的，一致的","adjective","Her argument was coherent and logical.","六级",0,2025-11-06 05:12:58,2025-11-06 05:12:58
+670,"coincide",en,"同时发生，一致","verb","Our views coincide.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+474,"collaborate",en,"合作，协作","verb","They collaborate on research projects.","六级",0,2025-11-06 05:12:58,2025-11-06 05:12:58
+766,"collapse",en,"倒塌，崩溃","verb","The old building collapsed in the storm.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+338,"colleague",en,"同事","noun","My colleague will help you with the project.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+288,"college",en,"大学，学院","noun","She plans to attend college after high school.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+767,"combine",en,"结合，联合","verb","Combine the flour and water to make dough.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+475,"commence",en,"开始，着手","verb","The ceremony will commence at noon.","六级",0,2025-11-06 05:12:58,2025-11-06 05:12:58
+1116,"commensurate",en,"相称的，相当的","adjective","His salary is commensurate with his experience.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+671,"comment",en,"评论，意见","noun","He made a positive comment.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+968,"commentary",en,"评论，解说","noun","The book includes a detailed commentary on the text.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+782,"commerce",en,"商业，贸易","noun","E-commerce is growing rapidly.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+672,"commission",en,"委员会，佣金","noun","She earns a commission on sales.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+673,"commit",en,"承诺，犯罪","verb","He committed to the plan.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+969,"commitment",en,"承诺，奉献","noun","She has a strong commitment to her work.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+674,"commodity",en,"商品，日用品","noun","Oil is a valuable commodity.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+675,"communicate",en,"沟通，交流","verb","We communicate regularly.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+676,"community",en,"社区，团体","noun","The local community is active.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+677,"comparable",en,"可比较的，类似的","adjective","The two are comparable in size.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+476,"compatible",en,"兼容的，能共处的","adjective","The software is compatible with Windows.","六级",0,2025-11-06 05:12:58,2025-11-06 05:12:58
+678,"compel",en,"强迫，迫使","verb","The law compels action.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1117,"compendium",en,"概要，纲要","noun","The book is a compendium of knowledge.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+477,"compensate",en,"补偿，赔偿","verb","The company will compensate for the loss.","六级",0,2025-11-06 05:12:58,2025-11-06 05:12:58
+783,"compete",en,"竞争","verb","Teams compete for the prize.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+679,"competent",en,"有能力的，胜任的","adjective","She is a competent manager.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+680,"compile",en,"编译，汇编","verb","He compiled a list of names.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1118,"complacent",en,"自满的","adjective","He became complacent after his success.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+478,"complement",en,"补充，补足","verb","The wine complements the meal perfectly.","六级",0,2025-11-06 05:12:58,2025-11-06 05:12:58
+681,"complex",en,"复杂的，复合的","adjective","It's a complex problem.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+682,"component",en,"组成部分，组件","noun","Each component is important.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+792,"compound",en,"化合物，复合的","noun","Water is a compound made of hydrogen and oxygen.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+683,"comprehend",en,"理解，领会","verb","I cannot comprehend this text.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+479,"comprehensive",en,"全面的，综合的","adjective","We conducted a comprehensive study.","六级",0,2025-11-06 05:12:58,2025-11-06 05:12:58
+684,"comprise",en,"包含，由...组成","verb","The team comprises five members.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+293,"compromise",en,"妥协；折衷；危及","noun/verb","They reached a compromise after long negotiations.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+789,"compute",en,"计算，估算","verb","The system can compute complex equations.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+289,"con",en,"骗局，反对","noun","He fell victim to an elaborate con.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+685,"conceal",en,"隐藏，隐瞒","verb","He concealed the truth.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+331,"concede",en,"承认；让步","verb","He had to concede defeat after a long battle.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+480,"conceive",en,"构思，设想","verb","It is hard to conceive of a better solution.","六级",0,2025-11-06 05:12:58,2025-11-06 05:12:58
+686,"concentrate",en,"集中，浓缩","verb","Concentrate on your work.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+687,"concept",en,"概念，观念","noun","The concept is simple.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+688,"concern",en,"关心，涉及","noun","Safety is a major concern.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+689,"conclude",en,"得出结论，结束","verb","We conclude the meeting now.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+690,"concrete",en,"具体的，混凝土的","adjective","Give me concrete examples.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1060,"concur",en,"同意","verb","I concur with your opinion.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+481,"concurrent",en,"同时发生的","adjective","The two events were concurrent.","六级",0,2025-11-06 05:12:58,2025-11-06 05:12:58
+482,"condense",en,"浓缩，压缩","verb","Condense the report to two pages.","六级",0,2025-11-06 05:12:58,2025-11-06 05:12:58
+691,"conduct",en,"进行，行为","verb","They conducted an experiment.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+483,"confer",en,"授予，商议","verb","The university will confer a degree.","六级",0,2025-11-06 05:12:58,2025-11-06 05:12:58
+484,"confidential",en,"机密的，保密的","adjective","This information is confidential.","六级",0,2025-11-06 05:12:58,2025-11-06 05:12:58
+692,"confine",en,"限制，禁闭","verb","Confine your remarks to the topic.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+693,"confirm",en,"确认，证实","verb","Please confirm your appointment.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+694,"conflict",en,"冲突，矛盾","noun","The conflict was resolved.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+485,"conform",en,"符合，遵守","verb","You must conform to the rules.","六级",0,2025-11-06 05:12:58,2025-11-06 05:12:58
+695,"confront",en,"面对，遭遇","verb","She confronted the problem.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+696,"confuse",en,"混淆，使困惑","verb","The instructions confused me.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+413,"congress",en,"国会，代表大会","noun","The new law was passed by Congress last week.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+697,"conscience",en,"良心，道德心","noun","He has a clear conscience.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+722,"conscious",en,"有意识的，清醒的","adjective","She was conscious of being watched.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+405,"consensus",en,"共识，一致意见","noun","The committee reached a consensus on the new policy.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+723,"consent",en,"同意，允许","noun","You need parental consent to participate.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+724,"consequence",en,"结果，后果","noun","Consider the consequences before making a decision.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+790,"consequent",en,"随之发生的","adjective","The consequent changes were significant.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+725,"conservative",en,"保守的，守旧的","adjective","He has conservative views on economic policy.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+726,"considerable",en,"相当大的，重要的","adjective","The project requires considerable investment.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+727,"consist",en,"由...组成，在于","verb","The team consists of five members.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+728,"consistent",en,"一致的，连续的","adjective","Her performance has been consistent all season.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+486,"conspicuous",en,"显眼的，引人注目的","adjective","His red jacket was conspicuous in the crowd.","六级",0,2025-11-06 05:12:58,2025-11-06 05:12:58
+729,"constant",en,"持续的，不变的","adjective","The constant noise made it hard to concentrate.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+730,"constitute",en,"组成，构成","verb","These elements constitute the basic structure.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+731,"constrain",en,"限制，约束","verb","Budget constraints limited our options.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+732,"construct",en,"建造，构建","verb","They plan to construct a new bridge next year.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+733,"consult",en,"咨询，商议","verb","You should consult a doctor about that pain.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+734,"consume",en,"消耗，消费","verb","The engine consumes a lot of fuel.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+735,"contact",en,"联系，接触","noun","Please keep in contact after you move.","六级",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+487,"contemplate",en,"沉思，考虑","verb","She sat quietly to contemplate her future.","六级",0,2025-11-06 05:12:58,2025-11-06 05:12:58
+367,"contemporary",en,"当代的；同时代的","adjective","She studies contemporary art.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+793,"context",en,"上下文，背景","noun","It is important to understand the context of the quote.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+392,"continued",en,"持续的，继续的","adjective","We appreciate your continued support for our project.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+794,"contract",en,"合同，契约","noun","She signed a contract with the company.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+488,"contradict",en,"反驳，与...矛盾","verb","His actions contradict his words.","六级",0,2025-11-06 05:12:58,2025-11-06 05:12:58
+795,"contrary",en,"相反的","adjective","Contrary to popular belief, bats are not blind.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+796,"contrast",en,"对比，对照","noun","The contrast between light and dark is striking.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+797,"contribute",en,"贡献，捐献","verb","Everyone can contribute to the discussion.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1020,"controversial",en,"有争议的","adjective","It is a controversial topic.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+798,"controversy",en,"争议，争论","noun","The new policy caused a lot of controversy.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1184,"conundrum",en,"难题，谜语","noun","Solving this conundrum requires creativity.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+489,"convene",en,"召集，集合","verb","The committee will convene next week.","六级",0,2025-11-06 05:12:58,2025-11-06 05:12:58
+817,"conventional",en,"传统的","adjective","They follow conventional methods.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+490,"converge",en,"汇聚，集中","verb","The roads converge at the city center.","六级",0,2025-11-06 05:12:58,2025-11-06 05:12:58
+799,"converse",en,"交谈，相反的","verb","They conversed for hours about their travels.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+800,"convert",en,"转换，转变","verb","She converted the garage into a studio.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+801,"convey",en,"传达，运输","verb","The painting conveys a sense of peace.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+802,"convince",en,"说服，使信服","verb","He tried to convince her to join the team.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1119,"convoluted",en,"复杂的，费解的","adjective","The plot was convoluted and hard to follow.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+803,"cooperate",en,"合作，配合","verb","The two companies agreed to cooperate on the project.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+804,"coordinate",en,"协调，配合","verb","She will coordinate the event logistics.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+805,"core",en,"核心，中心","noun","The core of the issue is communication.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+806,"corporate",en,"公司的，法人的","adjective","Corporate policies must be followed by all employees.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+491,"correlate",en,"相关，关联","verb","Smoking correlates with lung disease.","六级",0,2025-11-06 05:12:58,2025-11-06 05:12:58
+807,"correspond",en,"符合，通信","verb","His actions do not correspond with his words.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1120,"corroborate",en,"证实，支持","verb","The witness corroborated his story.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+808,"couple",en,"一对，几个","noun","A couple of students volunteered to help.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+326,"crawl",en,"爬行；缓慢移动","verb","The baby learned to crawl before he could walk.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+809,"create",en,"创造，创建","verb","Artists create beautiful works of art.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+492,"credible",en,"可信的，可靠的","adjective","He is a credible witness.","六级",0,2025-11-06 05:12:58,2025-11-06 05:12:58
+810,"credit",en,"信用，学分","noun","She received credit for her hard work.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1121,"credulous",en,"轻信的","adjective","She is credulous and believes everything.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+818,"criteria",en,"标准","noun","Meet the criteria for admission.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+811,"criterion",en,"标准，准则","noun","Meeting the criteria is essential for approval.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+305,"crowd",en,"人群；群众；挤满","noun/verb","A crowd of people waited outside the theater.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+294,"crowds",en,"人群；群众（复数形式）","noun","Large crowds gathered in the city center for the celebration.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+812,"crucial",en,"关键的，决定性的","adjective","Timing is crucial in this experiment.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+970,"culminate",en,"达到顶点，告终","verb","The festival culminates in a fireworks display.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1122,"culpable",en,"有罪的，应受谴责的","adjective","He was culpable for the accident.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+971,"cultivate",en,"培养，耕作","verb","He cultivates a positive attitude.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+813,"culture",en,"文化","noun","Language is an important part of culture.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+493,"cumulative",en,"累积的，渐增的","adjective","The cumulative effect is significant.","六级",0,2025-11-06 05:12:58,2025-11-06 05:12:58
+248,"cur",en,"杂种狗；恶狗","noun","The angry cur barked at the strangers.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+431,"cure",en,"治愈；疗法","noun","Scientists are searching for a cure for cancer.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+259,"curiosity",en,"好奇心，新奇的事物","noun","Children have a natural curiosity about the world around them.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+396,"curious",en,"好奇的，奇特的","adjective","The child was curious about how the machine worked.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+265,"currency",en,"货币，通货","noun","The euro is the official currency of many European countries.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+353,"current",en,"当前的，现在的","adjective","The current situation requires immediate action.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+419,"currently",en,"当前，目前","adverb","She is currently working on a new novel.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+814,"cycle",en,"循环，周期","noun","The water cycle is essential for life on Earth.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+389,"danger",en,"危险，风险","noun","Swimming in this river is full of danger.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+395,"dangerous",en,"危险的","adjective","It's dangerous to drive in such heavy rain.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+298,"data",en,"数据；资料","noun","The researchers analyzed the data from the experiment.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+1123,"dearth",en,"缺乏，稀少","noun","There is a dearth of evidence.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+819,"debate",en,"辩论","noun","The debate was intense.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+972,"decade",en,"十年","noun","Technology has advanced rapidly in the past decade.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+494,"decisive",en,"决定性的，果断的","adjective","Her decisive action saved the day.","六级",0,2025-11-06 05:12:58,2025-11-06 05:12:58
+820,"decline",en,"下降","verb","Sales have declined this year.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+495,"dedicate",en,"奉献，致力于","verb","He dedicates his life to helping others.","六级",0,2025-11-06 05:12:58,2025-11-06 05:12:58
+821,"deduce",en,"推断","verb","From the clues, we can deduce.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+415,"deed",en,"行为，事迹","noun","His brave deed saved the child's life.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+1124,"deference",en,"尊重，顺从","noun","He showed deference to his elders.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+822,"define",en,"定义","verb","Can you define this term?","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+973,"definite",en,"明确的，一定的","adjective","She has a definite plan for the future.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1125,"demagogue",en,"煽动者","noun","The demagogue rallied the crowd with lies.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+823,"demonstrate",en,"证明","verb","The experiment demonstrates the theory.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+974,"denote",en,"表示，指示","verb","The symbol denotes a warning.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1126,"deride",en,"嘲笑，嘲弄","verb","They derided his ideas.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+824,"derive",en,"源自","verb","Many words derive from Latin.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+234,"descend",en,"下降；下来","verb","The airplane began to descend for landing.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+332,"descendant",en,"后代，后裔","noun","He is a direct descendant of the famous writer.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+1127,"desiccate",en,"使干燥，脱水","verb","The sun desiccated the soil.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+995,"design",en,"设计，计划","verb","They will design a new website.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+996,"despite",en,"尽管，不管","preposition","Despite the rain, the event continued.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1128,"desultory",en,"散漫的，不连贯的","adjective","Their conversation was desultory.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+825,"detect",en,"检测","verb","The device can detect motion.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1061,"deteriorate",en,"恶化","verb","His health began to deteriorate.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+826,"determine",en,"确定","verb","We need to determine the cause.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+827,"develop",en,"发展","verb","The city continues to develop.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+975,"deviate",en,"偏离，背离","verb","Do not deviate from the main path.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+828,"device",en,"设备","noun","This device is very useful.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+976,"devote",en,"奉献，致力于","verb","She devotes her time to charity work.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1129,"diatribe",en,"抨击，谴责","noun","He delivered a diatribe against the government.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+421,"did",en,"做（do的过去式）","verb","She did her homework before dinner.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+1130,"didactic",en,"说教的，教诲的","adjective","The story had a didactic purpose.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+977,"differentiate",en,"区分，区别","verb","It is important to differentiate between facts and opinions.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1131,"diffident",en,"缺乏自信的","adjective","She was diffident in public.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1132,"dilatory",en,"拖延的","adjective","His dilatory habits caused delays.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1039,"dilemma",en,"困境","noun","I faced a moral dilemma.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1133,"dilettante",en,"业余爱好者","noun","He was a dilettante in art.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+997,"dimension",en,"维度，尺寸","noun","We need to consider the social dimension of the problem.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+829,"diminish",en,"减少","verb","The pain will diminish over time.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+978,"discrete",en,"离散的，不连续的","adjective","The data is divided into discrete categories.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+979,"discriminate",en,"区分，歧视","verb","It is wrong to discriminate based on race.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1185,"disparage",en,"贬低，轻视","verb","She never disparages her colleagues.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1134,"disparate",en,"不同的，无关的","adjective","The two groups have disparate goals.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+980,"displace",en,"取代，置换","verb","New technology may displace old methods.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+998,"display",en,"显示，展示","verb","The museum will display ancient artifacts.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+981,"dispose",en,"处理，安排","verb","How should we dispose of the waste?","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1186,"dissemble",en,"掩饰，伪装","verb","He dissembled his true intentions.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1135,"disseminate",en,"传播，散布","verb","They disseminated the information widely.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1187,"dissonance",en,"不和谐，不一致","noun","There is dissonance between his words and actions.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+830,"distinct",en,"独特的","adjective","Each culture has distinct traditions.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+831,"distinguish",en,"区分","verb","It's hard to distinguish them.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+982,"distort",en,"扭曲，歪曲","verb","The mirror distorts the image.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+983,"distribute",en,"分配，分发","verb","Volunteers distribute food to the needy.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+832,"diverse",en,"多样的","adjective","The group is culturally diverse.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+984,"document",en,"文件，记录","noun","Please read the document carefully.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1136,"dogmatic",en,"教条的，武断的","adjective","He is dogmatic in his beliefs.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+985,"domain",en,"领域，范围","noun","This is outside my domain of expertise.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+833,"dominate",en,"主导","verb","One team dominated the game.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+253,"dozen",en,"一打，十二个","noun","She bought a dozen eggs at the supermarket.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+999,"draft",en,"草稿，草案","noun","She wrote a draft of the report.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+986,"dramatic",en,"戏剧性的，显著的","adjective","There was a dramatic increase in sales.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+987,"duration",en,"持续时间","noun","The duration of the movie is two hours.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+834,"dynamic",en,"动态的","adjective","The situation is dynamic.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1137,"ebullient",en,"热情洋溢的","adjective","She was ebullient after the victory.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1138,"eclectic",en,"折衷的，兼收并蓄的","adjective","His taste in music is eclectic.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+835,"economic",en,"经济的","adjective","Economic growth is steady.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+988,"economy",en,"经济，节约","noun","The economy is growing steadily.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1000,"edit",en,"编辑，校订","verb","He will edit the manuscript before publication.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+836,"efficient",en,"高效的","adjective","The system is very efficient.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1139,"egregious",en,"惊人的，恶劣的","adjective","It was an egregious error.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1040,"elaborate",en,"详细的","adjective","She gave an elaborate explanation.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+356,"elder",en,"年长的，长辈","adjective","We should respect our elder family members.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+837,"element",en,"元素","noun","Water is a basic element.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+989,"eliminate",en,"消除，排除","verb","We must eliminate errors from the report.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1140,"elucidate",en,"阐明，解释","verb","The teacher elucidated the complex topic.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1062,"elusive",en,"难以捉摸的","adjective","The solution remains elusive.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+838,"emerge",en,"出现","verb","New trends emerge quickly.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1188,"emollient",en,"润肤的，缓和剂","adjective","The cream has an emollient effect.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+401,"emotion",en,"情感，情绪","noun","Love is a powerful emotion that can change people's lives.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+328,"emotional",en,"情感的；情绪化的","adjective","It was an emotional reunion after ten years apart.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+1001,"emphasis",en,"强调，重点","noun","The teacher placed emphasis on critical thinking.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+839,"emphasize",en,"强调","verb","He emphasized the importance.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1002,"empirical",en,"经验主义的","adjective","The study is based on empirical evidence.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+840,"enable",en,"使能够","verb","Technology enables communication.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+841,"encounter",en,"遇到","verb","We may encounter problems.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1003,"energy",en,"能量，精力","noun","Solar energy is a renewable resource.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1141,"enervate",en,"使衰弱，使无力","verb","The heat enervated him.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1004,"enforce",en,"执行，实施","verb","The police enforce traffic laws.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1142,"engender",en,"产生，引起","verb","The policy engendered controversy.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+842,"enhance",en,"增强","verb","Practice can enhance skills.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1143,"enigma",en,"谜，难以理解的事物","noun","His behavior remains an enigma.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+843,"enormous",en,"巨大的","adjective","The project requires enormous effort.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+844,"ensure",en,"确保","verb","Please ensure safety first.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+990,"entity",en,"实体，存在","noun","The company is a separate legal entity.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+845,"environment",en,"环境","noun","Protect the natural environment.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1144,"ephemeral",en,"短暂的","adjective","Fame is often ephemeral.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+991,"equate",en,"等同，使相等","verb","Some people equate success with wealth.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1005,"equip",en,"装备，配备","verb","The lab is equipped with modern instruments.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+992,"equivalent",en,"相等的，等价的","adjective","The two amounts are equivalent.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1145,"equivocate",en,"含糊其辞","verb","Politicians often equivocate.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+302,"era",en,"时代；纪元","noun","The digital era has transformed how we communicate.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+993,"erode",en,"侵蚀，腐蚀","verb","Wind and water can erode rocks.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1006,"error",en,"错误，差错","noun","There was an error in the calculation.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1146,"erudite",en,"博学的","adjective","He is an erudite scholar.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1147,"esoteric",en,"深奥的，难懂的","adjective","The subject is esoteric.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+846,"establish",en,"建立","verb","They established a new company.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+847,"estimate",en,"估计","verb","Can you estimate the cost?","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1007,"ethic",en,"伦理，道德","noun","Professional ethics are important in business.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1148,"eulogy",en,"颂词，悼词","noun","He delivered a eulogy at the funeral.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1149,"euphemism",en,"委婉语","noun","'Pass away' is a euphemism for 'die'.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+848,"evaluate",en,"评估","verb","We need to evaluate the results.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+849,"evidence",en,"证据","noun","There is strong evidence.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+994,"evident",en,"明显的，明白的","adjective","It is evident that she is unhappy.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+267,"evolve",en,"进化，发展","verb","Technology continues to evolve at a rapid pace.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+58,"evolve revolve",en,"进化，发展","verb","Species evolve over time.","",2,2025-11-02 16:53:45,2025-11-04 05:07:52
+251,"ex",en,"前妻；前夫；前任","noun","She's having dinner with her ex tonight.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+1150,"exacerbate",en,"恶化，加剧","verb","His comments exacerbated the conflict.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+428,"exact",en,"精确的；准确的","adjective","Please provide the exact time of arrival.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+344,"exceed",en,"超过，胜过","verb","The results exceeded our expectations.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+80,"exceeded",en,"超过的（exceed的过去式和过去分词）","verb","Sales exceeded our expectations last quarter.","",7,2025-11-02 16:53:45,2025-11-05 15:19:07
+349,"exceeding",en,"超越的，非常的","adjective","Her beauty was of an exceeding loveliness.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+406,"excel",en,"擅长，胜过他人","verb","She excels in mathematics and science.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+400,"excellent",en,"优秀的，极好的","adjective","She received excellent grades in all her exams.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+371,"excess",en,"过量；超过；多余的","noun","The excess of food was donated to charity.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+410,"excessive",en,"过度的，过多的","adjective","Excessive drinking can damage your health.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+850,"exclude",en,"排除","verb","Do not exclude any options.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1151,"exculpate",en,"开脱，证明无罪","verb","The evidence exculpated the suspect.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1152,"exigent",en,"紧急的，迫切的","adjective","The situation is exigent.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+851,"expand",en,"扩展","verb","The business plans to expand.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+852,"expert",en,"专家","noun","She is an expert in biology.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+853,"explicit",en,"明确的","adjective","Give explicit instructions.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+854,"explore",en,"探索","verb","They explore new ideas.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+855,"expose",en,"暴露","verb","Do not expose it to sunlight.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+281,"extra",en,"额外的，附加的","adjective","We need some extra chairs for the guests.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+1153,"extraneous",en,"无关的，外来的","adjective","Please omit extraneous details.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1154,"facetious",en,"开玩笑的，轻率的","adjective","He made a facetious remark.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+856,"facilitate",en,"促进","verb","Tools facilitate learning.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+857,"factor",en,"因素","noun","Time is a key factor.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1155,"fallacious",en,"谬误的，欺骗的","adjective","His argument was fallacious.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+319,"fashion",en,"时尚；方式","noun","She always dresses in the latest fashion.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+1156,"fastidious",en,"挑剔的，苛求的","adjective","She is fastidious about cleanliness.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1157,"fatuous",en,"愚昧的，昏庸的","adjective","His fatuous comments were ignored.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1041,"feasible",en,"可行的","adjective","The plan seems feasible.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+858,"feature",en,"特征","noun","This phone has many features.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1189,"fecund",en,"多产的，肥沃的","adjective","The soil is fecund.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1158,"fervent",en,"热情的，热烈的","adjective","She is a fervent supporter.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1159,"flagrant",en,"公然的，明目张胆的","adjective","It was a flagrant violation of the rules.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+345,"flame",en,"火焰，火苗","noun","The flame of the candle flickered in the wind.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+340,"flash",en,"闪光，闪现","verb","Lightning flashed across the sky.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+262,"flasher",en,"闪光装置；暴露狂","noun","The emergency flasher on the car was blinking brightly.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+422,"flesh",en,"肉；肉体","noun","The wound exposed the flesh beneath the skin.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+859,"flexible",en,"灵活的","adjective","Be flexible in your approach.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+255,"flock",en,"群，人群；聚集","noun","A flock of birds flew across the sky.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+315,"flour",en,"面粉","noun","We need more flour to bake the bread.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+365,"flourish",en,"繁荣；茂盛；挥舞","verb","Plants flourish in this fertile soil.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+1063,"fluctuate",en,"波动","verb","Prices fluctuate daily.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+860,"focus",en,"焦点","noun","Keep your focus on the goal.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1160,"foment",en,"煽动，挑起","verb","They tried to foment rebellion.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+861,"format",en,"格式","noun","Follow the required format.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+417,"found",en,"建立，创立","verb","They founded the company in 1995.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+363,"foundation",en,"基础；地基；基金会","noun","The foundation of the building is very strong.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+388,"fountain",en,"喷泉，源泉","noun","Children were playing near the fountain in the park.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+247,"fraction",en,"分数；小部分","noun","Only a fraction of the students passed.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+355,"fragment",en,"碎片，片段","noun","He found a fragment of ancient pottery.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+346,"framework",en,"框架，结构","noun","They built a strong framework for the new building.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+282,"fresh",en,"新鲜的，新的","adjective","I bought some fresh vegetables from the market.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+862,"function",en,"功能","noun","The machine has multiple functions.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+863,"fundamental",en,"基本的","adjective","Respect is fundamental.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+318,"gamble",en,"赌博；冒险","verb","He decided to gamble all his savings on the new business.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+420,"gang",en,"一群，一伙；帮派","noun","A gang of teenagers was hanging out near the park.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+1161,"garrulous",en,"喋喋不休的","adjective","He is garrulous and talks too much.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+864,"generate",en,"产生","verb","Wind can generate electricity.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+865,"global",en,"全球的","adjective","Climate change is a global issue.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1010,"globalization",en,"全球化","noun","Globalization has increased international trade.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1064,"gratify",en,"使满足","verb","It gratifies me to see you succeed.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1042,"gregarious",en,"社交的","adjective","He is a gregarious person.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1162,"harangue",en,"长篇大论，训斥","noun","He delivered a harangue to the staff.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+379,"harm",en,"伤害；损害","noun","Smoking can cause harm to your health.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+404,"hazard",en,"危险，危害","noun","Smoking is a serious health hazard.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+1021,"hierarchy",en,"等级制度","noun","The company has a strict hierarchy.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1065,"hinder",en,"阻碍","verb","Bad weather hindered our progress.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+866,"hypothesis",en,"假设","noun","Test the hypothesis with data.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1043,"hypothetical",en,"假设的","adjective","This is a hypothetical situation.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+427,"i",en,"我（第一人称单数代词）","pronoun","I am going to the store.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+1163,"iconoclast",en,"反对传统观念者","noun","He was an iconoclast in the art world.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+867,"identify",en,"识别","verb","Can you identify the problem?","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1164,"idiosyncrasy",en,"特质，癖好","noun","Her idiosyncrasies made her unique.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+312,"idle",en,"闲置的；懒惰的；无工作的","adjective","The factory machines stood idle during the holiday.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+868,"illustrate",en,"说明","verb","The graph illustrates the trend.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+269,"immigrant",en,"移民","noun","Her grandparents were immigrants from Italy.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+869,"impact",en,"影响","noun","The decision had a big impact.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1044,"impartial",en,"公正的","adjective","The judge must be impartial.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1165,"impetuous",en,"冲动的，鲁莽的","adjective","His impetuous decision led to trouble.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+870,"implement",en,"实施","verb","We will implement the plan.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+871,"imply",en,"暗示","verb","His words imply agreement.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+306,"in",en,"在…里面；在…期间；以…方式","preposition/adverb/adjective","She lives in a small apartment in the city.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+1022,"incentive",en,"激励","noun","Financial incentives motivate employees.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1190,"incisive",en,"尖锐的，深刻的","adjective","She asked incisive questions.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+240,"incline",en,"倾斜；倾向于","verb","The road inclines steeply at this point.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+1166,"incongruous",en,"不协调的，不一致的","adjective","The modern furniture looked incongruous in the old house.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1066,"incur",en,"招致","verb","You may incur additional costs.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1167,"indefatigable",en,"不知疲倦的","adjective","She is an indefatigable worker.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+872,"indicate",en,"表明","verb","Data indicate a positive trend.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+873,"individual",en,"个人","noun","Each individual is unique.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1191,"indolent",en,"懒惰的","adjective","He is indolent and avoids work.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1192,"ineffable",en,"难以形容的","adjective","The beauty was ineffable.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1168,"inexorable",en,"无情的，不可阻挡的","adjective","Time is inexorable.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+254,"infant",en,"婴儿，幼儿","noun","The infant was sleeping peacefully in the crib.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+874,"infer",en,"推断","verb","From context, we can infer.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+875,"influence",en,"影响","verb","Media can influence opinions.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1169,"ingenuous",en,"天真的，坦率的","adjective","Her ingenuous smile charmed everyone.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1170,"inimical",en,"有害的，敌意的","adjective","The environment is inimical to life.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+876,"initial",en,"最初的","adjective","The initial step is important.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+418,"injure",en,"伤害，使受伤","verb","The accident injured three people.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+1194,"innocuous",en,"无害的，无伤大雅的","adjective","It was an innocuous comment.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1195,"insidious",en,"阴险的，潜伏的","adjective","The disease was insidious.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1171,"insipid",en,"乏味的，无趣的","adjective","The food was insipid.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+877,"integrate",en,"整合","verb","Integrate new information.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+878,"interpret",en,"解释","verb","How do you interpret this?","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1172,"intransigent",en,"不妥协的","adjective","He was intransigent in negotiations.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1173,"inundate",en,"淹没，泛滥","verb","The flood inundated the town.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+879,"investigate",en,"调查","verb","Police investigate the crime.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+880,"involve",en,"涉及","verb","The job involves travel.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1174,"irascible",en,"易怒的","adjective","He has an irascible temper.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+383,"irrational",en,"不理性的，不合理的","adjective","His fear of flying was completely irrational.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+881,"isolate",en,"隔离","verb","Isolate the infected patients.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+882,"issue",en,"问题","noun","Address the issue promptly.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1023,"jeopardize",en,"危害","verb","Smoking can jeopardize your health.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1067,"jovial",en,"快乐的","adjective","He has a jovial personality.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+883,"justify",en,"证明合理","verb","Can you justify your decision?","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1045,"juxtaposition",en,"并列","noun","The juxtaposition of colors creates contrast.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1024,"kinetic",en,"运动的","adjective","Kinetic energy is the energy of motion.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1011,"knowledge",en,"知识","noun","She has extensive knowledge of history.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+884,"label",en,"标签","noun","Read the label carefully.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1175,"laconic",en,"简洁的","adjective","His laconic reply ended the discussion.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1068,"lament",en,"哀悼","verb","She lamented the loss of her friend.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1176,"laudable",en,"值得赞扬的","adjective","Her efforts are laudable.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+284,"lease",en,"租约，租赁","noun","We signed a one-year lease for the apartment.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+1012,"legislation",en,"立法","noun","The government passed new environmental legislation.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+398,"lend",en,"借出，贷款","verb","Could you lend me some money until tomorrow?","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+885,"link",en,"链接","noun","There is a link between them.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+886,"locate",en,"定位","verb","Can you locate the file?","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1177,"loquacious",en,"健谈的","adjective","He is loquacious at parties.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1046,"lucid",en,"清晰的","adjective","He gave a lucid presentation.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1025,"lucrative",en,"有利可图的","adjective","He has a lucrative business.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1069,"magnanimous",en,"宽宏大量的","adjective","He was magnanimous in victory.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+887,"maintain",en,"维持","verb","Maintain a healthy lifestyle.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1196,"malleable",en,"可塑的，易受影响的","adjective","Gold is a malleable metal.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+307,"man",en,"男人；人类；人员","noun/verb","The man walked his dog in the park every morning.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+372,"mass",en,"质量；大量；群众","noun","The mass of the object is 5 kilograms.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+241,"massage",en,"按摩","noun","She gave me a relaxing shoulder massage.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+268,"massive",en,"巨大的，大量的","adjective","They built a massive stadium for the Olympic Games.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+313,"math",en,"数学","noun","She excels in math and science.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+888,"maximize",en,"最大化","verb","Maximize your potential.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1178,"mendacious",en,"虚假的，说谎的","adjective","His mendacious statements were exposed.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1197,"mercurial",en,"善变的，活泼的","adjective","Her mercurial temperament made her unpredictable.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+889,"method",en,"方法","noun","Use a scientific method.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1013,"methodology",en,"方法论","noun","The research methodology was clearly explained.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1047,"meticulous",en,"一丝不苟的","adjective","She is meticulous in her work.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+354,"migrate",en,"迁移，迁徙","verb","Many birds migrate to warmer regions in winter.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+890,"minimize",en,"最小化","verb","Minimize the risks involved.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1198,"misanthrope",en,"厌恶人类的人","noun","He was a misanthrope who avoided people.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1026,"mitigate",en,"减轻","verb","We must mitigate the effects of climate change.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+375,"mix",en,"混合；混合物","verb","Mix the flour and eggs together.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+238,"mixture",en,"混合物","noun","The cake batter is a smooth mixture.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+242,"mobile",en,"移动的；可动的","adjective","Mobile phones have changed our lives.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+373,"modern",en,"现代的；时髦的","adjective","They live in a modern house.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+891,"modify",en,"修改","verb","You can modify the settings.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+892,"monitor",en,"监控","verb","Monitor the progress closely.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+377,"motion",en,"运动；动作；提议","noun","The motion of the waves was calming.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+243,"motionless",en,"不动的，静止的","adjective","The cat remained motionless while hunting.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+358,"motivate",en,"激励，激发","verb","A good teacher can motivate students to learn.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+287,"motive",en,"动机，目的","noun","The police are investigating the motive for the crime.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+232,"mount",en,"攀登；安装；骑上","verb","They plan to mount the mountain tomorrow.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+416,"mountain",en,"山，山脉","noun","We climbed the mountain to see the sunrise.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+341,"move",en,"移动，搬动","verb","Please move your car from the driveway.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+277,"multiply",en,"乘，增加","verb","If you multiply 5 by 3, you get 15.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+285,"namely",en,"即，也就是","adverb","Three students were selected, namely John, Mary, and Tom.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+1199,"nefarious",en,"邪恶的，不道德的","adjective","They were involved in nefarious activities.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+893,"negate",en,"否定","verb","Evidence may negate the claim.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1048,"negligible",en,"可忽略的","adjective","The difference is negligible.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1014,"nevertheless",en,"然而","adverb","It was raining; nevertheless, we went for a walk.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+894,"notion",en,"概念","noun","It's a common notion.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+252,"nowadays",en,"现今，现在","adverb","Nowadays, most people use smartphones for communication.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+1070,"nuance",en,"细微差别","noun","There is a nuance in meaning between these words.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+279,"number",en,"数字，号码","noun","What is your phone number?","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+336,"numerous",en,"许多的，大量的","adjective","There are numerous reasons why I support this plan.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+1071,"obfuscate",en,"使模糊","verb","He tried to obfuscate the issue.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+895,"objective",en,"目标","noun","Set clear objectives.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1200,"obsequious",en,"谄媚的，奉承的","adjective","The obsequious waiter flattered the customers.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1027,"obsolete",en,"过时的","adjective","This technology is now obsolete.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1015,"obstacle",en,"障碍","noun","Lack of funding is a major obstacle.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+896,"obtain",en,"获得","verb","You must obtain permission.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+897,"occur",en,"发生","verb","Accidents can occur anytime.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+407,"of",en,"属于，关于","preposition","The color of the sky is blue.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+323,"offspring",en,"子女；后代","noun","The lioness protects her offspring from danger.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+1049,"ominous",en,"不祥的","adjective","The sky looked ominous before the storm.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1201,"opaque",en,"不透明的，难理解的","adjective","The explanation was opaque.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+898,"option",en,"选项","noun","Consider all options.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1202,"ostentatious",en,"炫耀的，卖弄的","adjective","His ostentatious display of wealth annoyed others.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+286,"our",en,"我们的","pronoun","This is our new house.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+899,"outcome",en,"结果","noun","The outcome was positive.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+397,"outdated",en,"过时的，陈旧的","adjective","This computer system is outdated and needs to be replaced.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+1028,"paradigm",en,"范式","noun","This discovery changed the scientific paradigm.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1016,"parameter",en,"参数","noun","We need to define the parameters of the study.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+900,"participate",en,"参与","verb","Everyone can participate.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+261,"people",en,"人们，人民","noun","Many people enjoy spending time outdoors.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+901,"perceive",en,"感知","verb","How do you perceive this?","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+352,"percentage",en,"百分比，百分率","noun","What percentage of students passed the exam?","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+1203,"perfidious",en,"背信弃义的","adjective","His perfidious actions betrayed his friends.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1204,"perfunctory",en,"敷衍的，马虎的","adjective","He gave a perfunctory nod.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+496,"perseverance",en,"坚持不懈，毅力","noun","Success requires hard work and perseverance.","六级",0,2025-11-06 05:12:58,2025-11-06 05:12:58
+364,"person",en,"人；个人","noun","She is a very kind person.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+303,"personnel",en,"人员；员工；人事部门","noun","All personnel must attend the safety training session.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+1205,"perspicacious",en,"有洞察力的","adjective","She made a perspicacious observation.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1050,"pervasive",en,"普遍的","adjective","Technology is pervasive in modern life.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1206,"phlegmatic",en,"冷静的，淡漠的","adjective","He remained phlegmatic under pressure.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+235,"phone",en,"电话；打电话","noun","I'll call you on the phone later.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+1207,"placate",en,"安抚，平息","verb","He tried to placate the angry customer.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+382,"popularity",en,"流行，普及，受欢迎","noun","The singer's popularity grew rapidly after the release of her new album.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+264,"population",en,"人口，种群","noun","The population of the city has grown rapidly in recent years.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+430,"portion",en,"部分；一份","noun","He ate only a small portion of the meal.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+902,"potential",en,"潜力","noun","She has great potential.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+339,"powder",en,"粉末","noun","She put some powder on her face.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+327,"practical",en,"实际的；实用的","adjective","She gave me some practical advice for the trip.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+330,"practice",en,"练习；实践","noun","Daily practice is essential to master a musical instrument.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+325,"precede",en,"在…之前；先于","verb","The appetizer will precede the main course.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+246,"preceding",en,"在前的，前述的","adjective","Refer to the preceding chapter for details.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+1208,"precipitate",en,"促使，加速","verb","The event precipitated a crisis.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+903,"predict",en,"预测","verb","It's hard to predict weather.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+333,"prevail",en,"盛行，占优势","verb","Justice will prevail in the end.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+1072,"prevalent",en,"流行的","adjective","Obesity is prevalent in many countries.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+904,"primary",en,"主要的","adjective","The primary goal is safety.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+905,"principle",en,"原则","noun","Follow ethical principles.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+257,"pro",en,"职业选手；赞成者；专业的","noun","He turned pro after winning the amateur championship.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+245,"procedure",en,"程序，步骤","noun","Follow the safety procedure carefully.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+239,"proceed",en,"继续进行；前进","verb","Please proceed to the next checkpoint.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+320,"proceeds",en,"收入；收益","noun","All proceeds from the concert will go to charity.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+260,"process",en,"过程，进程；处理","noun","Learning a new language is a gradual process.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+390,"procession",en,"队伍，行列，游行","noun","A wedding procession moved slowly down the street.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+1209,"profligate",en,"挥霍的，放荡的","adjective","His profligate spending led to debt.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+366,"profound",en,"深刻的；深远的；深厚的","adjective","His words had a profound impact on me.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+272,"progress",en,"进步，进展","noun","We have made significant progress on the project.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+1210,"prolific",en,"多产的，丰富的","adjective","She was a prolific writer.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+304,"promote",en,"促进；提升；推销","verb","The company will promote him to manager next month.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+270,"proportion",en,"比例，部分","noun","A large proportion of the budget was allocated to education.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+906,"propose",en,"提议","verb","I propose a new plan.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+907,"pursue",en,"追求","verb","Pursue your dreams.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1017,"qualitative",en,"定性的","adjective","The research uses qualitative methods.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1051,"quandary",en,"困惑","noun","I am in a quandary about what to do.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1029,"quantitative",en,"定量的","adjective","The study uses quantitative data.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1073,"quell",en,"平息","verb","The police quelled the riot.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1211,"quixotic",en,"不切实际的，空想的","adjective","His quixotic quest seemed hopeless.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+908,"range",en,"范围","noun","The price range is wide.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+308,"rate",en,"比率；速度；价格；评估","noun/verb","The unemployment rate has decreased this year.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+402,"ratio",en,"比率，比例","noun","The student-teacher ratio in this school is 20:1.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+424,"rational",en,"理性的；合理的","adjective","His decision was based on rational thinking.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+310,"react",en,"反应；回应；起化学反应","verb","How did she react to the surprising news?","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+1212,"recalcitrant",en,"反抗的，顽强的","adjective","The recalcitrant child refused to obey.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+296,"recede",en,"后退；减弱；变得模糊","verb","The floodwaters began to recede after the storm.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+295,"recently",en,"最近；近来","adverb","I recently started learning a new language.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+292,"recession",en,"经济衰退；后退；凹处","noun","The country is experiencing an economic recession.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+1052,"redundant",en,"冗余的","adjective","His job became redundant after the merger.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+348,"refresh",en,"使恢复精力，刷新","verb","I need to refresh my memory about the details.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+414,"release",en,"释放，发布","verb","The company will release its new product next month.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+1074,"relegate",en,"降级","verb","The team was relegated to a lower division.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1018,"reliable",en,"可靠的","adjective","This car is very reliable.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+909,"rely",en,"依赖","verb","You can rely on me.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+283,"remote",en,"遥远的，偏远的","adjective","They live in a remote village in the mountains.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+337,"remove",en,"移除，去掉","verb","Please remove your shoes before entering.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+378,"rent",en,"租金；出租","noun","We pay the rent on the first of each month.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+369,"rental",en,"租赁；租金；出租的","noun","The rental for this apartment is $1000 per month.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+910,"require",en,"要求","verb","The job requires skill.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+329,"rescue",en,"营救；救援","verb","The firefighters worked to rescue people from the burning building.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+911,"research",en,"研究","noun","Conduct more research.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1030,"resilient",en,"有弹性的","adjective","Children are often resilient to change.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+912,"resolve",en,"解决","verb","Resolve the conflict.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+301,"resort",en,"度假胜地；诉诸；采取","noun/verb","They went to a beach resort for their vacation.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+913,"resource",en,"资源","noun","Use resources wisely.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+914,"respond",en,"回应","verb","Please respond quickly.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+915,"restrict",en,"限制","verb","Restrict access to data.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+916,"retain",en,"保留","verb","Retain important documents.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+917,"reveal",en,"揭示","verb","The test will reveal results.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+385,"revolve",en,"旋转，围绕","verb","The Earth revolves around the Sun.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+368,"ridge",en,"山脊；屋脊；隆起部分","noun","We hiked along the mountain ridge.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+408,"risk",en,"风险，危险","noun","Investing in stocks involves some financial risk.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+244,"risky",en,"危险的，有风险的","adjective","Investing in startups can be risky.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+918,"role",en,"角色","noun","Play a key role.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1213,"sagacious",en,"睿智的，有远见的","adjective","The sagacious leader made wise decisions.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1214,"salubrious",en,"有益健康的","adjective","The mountain air was salubrious.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+437,"sb",en,"某人（somebody的缩写）","noun","Please ask sb to help you with this task.","",1,2025-11-05 15:19:07,2025-11-05 15:19:07
+919,"scheme",en,"计划","noun","A new scheme was proposed.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+361,"screw",en,"螺丝，螺钉","noun","I need a screw to fix this chair.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+1053,"scrutinize",en,"仔细检查","verb","The committee will scrutinize the proposal.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+920,"section",en,"部分","noun","Read the first section.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+423,"secure",en,"安全的；牢固的；获得","adjective","Make sure the door is secure before leaving.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+921,"select",en,"选择","verb","Select the best option.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+922,"sequence",en,"序列","noun","Follow the sequence.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+923,"significant",en,"重要的","adjective","A significant change occurred.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+924,"similar",en,"相似的","adjective","They have similar interests.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+925,"simulate",en,"模拟","verb","Simulate real conditions.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+311,"skeleton",en,"骨骼；骨架；框架","noun","The museum displayed the skeleton of a dinosaur.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+1075,"skeptical",en,"怀疑的","adjective","I am skeptical about his claims.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+359,"soar",en,"高飞，翱翔；急剧上升","verb","Eagles soar high in the sky.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+409,"somewhat",en,"有点，稍微","adverb","I'm somewhat tired after the long journey.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+280,"sort",en,"种类，分类","noun","What sort of music do you like?","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+926,"source",en,"来源","noun","Cite your sources.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+927,"specific",en,"具体的","adjective","Give specific examples.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1215,"sporadic",en,"零星的，偶尔的","adjective","There were sporadic outbreaks of violence.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+321,"staff",en,"员工；棍棒","noun","The company has a staff of fifty people.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+334,"stake",en,"赌注，股份","noun","He has a high stake in the company's success.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+350,"stale",en,"不新鲜的，陈腐的","adjective","The bread became stale after two days.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+433,"static",en,"静态的；静止的；静电干扰","adjective","The radio signal was full of static.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+237,"stir",en,"搅拌；激起","verb","Stir the soup gently while it cooks.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+928,"strategy",en,"策略","noun","Develop a good strategy.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+376,"stride",en,"大步走；进展","verb","He strode confidently into the room.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+929,"structure",en,"结构","noun","The structure is complex.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+273,"stuff",en,"东西，材料","noun","I need to organize all this stuff in my room.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+1031,"subsidize",en,"补贴","verb","The government subsidizes public transportation.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+930,"substitute",en,"替代","verb","Substitute sugar with honey.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+386,"success",en,"成功，成就","noun","Hard work is often the key to success.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+250,"succession",en,"连续；继任","noun","He won the championship three times in succession.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+263,"successor",en,"继任者，接班人","noun","The company announced his successor as the new CEO.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+316,"succussed",en,"摇动；振荡（尤指顺势疗法中的稀释过程）","verb","The homeopathic remedy was succussed vigorously before use.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+931,"sufficient",en,"足够的","adjective","We have sufficient time.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+932,"summarize",en,"总结","verb","Summarize the main points.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+362,"sun",en,"太阳，日光","noun","The sun rises in the east every morning.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+933,"supplement",en,"补充","verb","Supplement your diet.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+271,"surname",en,"姓，姓氏","noun","Smith is a common surname in English-speaking countries.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+374,"surplus",en,"过剩；盈余；多余的","noun","The company has a budget surplus this year.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+934,"survey",en,"调查","noun","Conduct a survey.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+935,"symbol",en,"符号","noun","The heart is a symbol of love.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1076,"tacit",en,"默示的","adjective","We had a tacit agreement.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1216,"taciturn",en,"沉默寡言的","adjective","He was a taciturn man who spoke little.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1032,"tangible",en,"有形的","adjective","We need tangible results.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+936,"target",en,"目标","noun","Set a realistic target.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+937,"technique",en,"技术","noun","Learn a new technique.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+435,"temple",en,"寺庙；太阳穴","noun","They visited an ancient temple in Thailand.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+317,"tempo",en,"节奏；速度","noun","The tempo of the music gradually increased.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+309,"temporary",en,"临时的；暂时的","adjective","This is just a temporary solution to the problem.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+938,"tend",en,"倾向于","verb","People tend to forget.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1054,"tentative",en,"试探性的","adjective","We made a tentative agreement.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+278,"the",en,"这，那（定冠词）","article","The sun is shining brightly today.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+939,"theory",en,"理论","noun","The theory is widely accepted.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+432,"they",en,"他们；她们；它们","pronoun","They are going to the movies tonight.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+256,"to",en,"向，到，对于","preposition","She went to the store to buy some groceries.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+940,"transfer",en,"转移","verb","Transfer the files.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+941,"transform",en,"转变","verb","Transform the data.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+942,"trend",en,"趋势","noun","Follow the latest trend.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+360,"troop",en,"部队，军队；一群","noun","A troop of soldiers marched through the town.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+1055,"ubiquitous",en,"无处不在的","adjective","Smartphones are ubiquitous nowadays.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+943,"ultimate",en,"最终的","adjective","The ultimate goal is peace.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1019,"ultimately",en,"最终","adverb","Ultimately, the decision is yours.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+944,"undergo",en,"经历","verb","The patient will undergo surgery.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+945,"underline",en,"强调","verb","Underline the key points.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1033,"undermine",en,"破坏","verb","His actions undermine our authority.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+946,"undertake",en,"承担","verb","Undertake a new project.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1077,"undulate",en,"波动","verb","The hills undulate in the distance.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+947,"unique",en,"独特的","adjective","Each person is unique.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+342,"up",en,"向上，在上面","adverb","Look up at the stars.","",3,2025-11-04 03:53:43,2025-11-05 15:19:07
+948,"utilize",en,"利用","verb","Utilize available resources.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1217,"vacillate",en,"犹豫，摇摆","verb","She vacillated between two choices.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+949,"valid",en,"有效的","adjective","The ticket is valid.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+950,"vary",en,"变化","verb","Prices vary by season.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1218,"venerate",en,"尊敬，崇敬","verb","They venerate their ancestors.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1219,"verbose",en,"冗长的，啰嗦的","adjective","His verbose speech bored the audience.","GRE",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+951,"verify",en,"验证","verb","Verify the information.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1034,"versatile",en,"多才多艺的","adjective","She is a versatile actress.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+952,"version",en,"版本","noun","This is the latest version.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+953,"via",en,"通过","preposition","Send it via email.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1078,"vindicate",en,"证明正确","verb","The evidence vindicated her.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+954,"violate",en,"违反","verb","Do not violate the rules.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+393,"virtual",en,"虚拟的，实质上的","adjective","Many meetings are now held in virtual reality.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+955,"visible",en,"可见的","adjective","The stars are visible.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+956,"vision",en,"愿景","noun","Share your vision.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+957,"volume",en,"体积","noun","Measure the volume.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+958,"voluntary",en,"自愿的","adjective","Participation is voluntary.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1056,"vulnerable",en,"易受伤害的","adjective","Children are vulnerable to diseases.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1079,"wane",en,"减弱","verb","His influence began to wane.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1035,"warrant",en,"保证","verb","The situation warrants immediate action.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1057,"wary",en,"谨慎的","adjective","Be wary of strangers.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+959,"welfare",en,"福利","noun","Care for animal welfare.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+960,"whereas",en,"然而","conjunction","He likes coffee, whereas she prefers tea.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+961,"widespread",en,"广泛的","adjective","The idea is widespread.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+962,"withdraw",en,"撤回","verb","Withdraw the application.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+963,"witness",en,"目击","verb","Did you witness the event?","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+425,"wonder",en,"惊奇；奇迹；想知道","verb","I wonder what time the meeting will start.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+1036,"xenophobia",en,"仇外心理","noun","Xenophobia is a serious social issue.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1080,"yearn",en,"渴望","verb","She yearns for adventure.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+964,"yield",en,"产生","verb","The investment yields profit.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+357,"youngster",en,"年轻人，少年","noun","The youngsters were playing in the park.","",2,2025-11-05 15:19:07,2025-11-05 15:19:07
+1037,"youthful",en,"年轻的","adjective","She has a youthful appearance.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1038,"zealous",en,"热情的","adjective","He is a zealous supporter of the cause.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1058,"zenith",en,"顶点","noun","His career reached its zenith in the 1990s.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+1081,"zest",en,"热情","noun","He approaches life with zest.","雅思",0,2025-11-06 05:15:54,2025-11-06 05:15:54
+965,"zone",en,"区域","noun","Enter the safe zone.","托福",0,2025-11-06 05:15:54,2025-11-06 05:15:54
