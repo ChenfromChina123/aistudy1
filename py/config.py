@@ -80,7 +80,7 @@ class Settings:
     USE_SSL: bool = os.getenv('USE_SSL', 'False').lower() == 'true'
     
     # ============ 服务器配置 ============
-    HOST: str = os.getenv('HOST', '::')
+    HOST: str = os.getenv('HOST', '0.0.0.0')
     PORT: int = int(os.getenv('PORT', '5001'))
     DEBUG: bool = os.getenv('DEBUG', 'False').lower() == 'true'
     RELOAD: bool = os.getenv('RELOAD', 'True').lower() == 'true'
