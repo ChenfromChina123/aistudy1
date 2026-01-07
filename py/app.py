@@ -1,4 +1,4 @@
-from fastapi import FastAPI, Depends, HTTPException, Request, UploadFile, File, Form
+from fastapi import FastAPI, APIRouter, Depends, HTTPException, Request, UploadFile, File, Form
 from urllib.parse import quote
 from fastapi.responses import JSONResponse, StreamingResponse, FileResponse, Response
 from fastapi.middleware.cors import CORSMiddleware
@@ -103,6 +103,9 @@ app = FastAPI(
     description="基于IPv6的AI智能学习助手", 
     version="4.0"
 )
+
+# 定义 API 路由器，统一管理前缀
+api_router = APIRouter(prefix="/old")
 
 # 请求体大小限制中间件（用于额外的检查和日志）
 class RequestSizeLimitMiddleware(BaseHTTPMiddleware):
@@ -1077,7 +1080,7 @@ async def get_current_user(request: Request, db: Session = Depends(get_db)):
         raise credentials_exception
 
 # 获取当前用户信息API端点
-@app.get("/old/api/users/me")
+@api_router.get("/api/users/me")
 async def get_current_user_info(
     current_user: User = Depends(get_current_user),
     db: Session = Depends(get_db)
@@ -1099,7 +1102,7 @@ async def get_current_user_info(
     }
 
 # 用户设置相关API端点
-@app.get("/old/api/settings", response_model=UserSettingsResponse)
+@api_router.get("/api/settings", response_model=UserSettingsResponse)
 async def get_user_settings(
     current_user: User = Depends(get_current_user),
     db: Session = Depends(get_db)
@@ -1127,7 +1130,7 @@ async def get_user_settings(
     # 使用to_dict方法确保datetime字段正确序列化为字符串
     return user_settings.to_dict()
 
-@app.post("/old/api/settings", response_model=UserSettingsResponse)
+@api_router.post("/api/settings", response_model=UserSettingsResponse)
 async def update_user_settings(
     settings: UserSettingsCreate,
     current_user: User = Depends(get_current_user),
@@ -1193,7 +1196,7 @@ async def update_user_settings(
         logger.error(f"保存用户设置失败: {str(e)}", exc_info=True)
         raise HTTPException(status_code=500, detail=f"更新设置失败: {str(e)}")
 
-@app.delete("/old/api/settings")
+@api_router.delete("/api/settings")
 async def delete_user_settings(
     current_user: User = Depends(get_current_user),
     db: Session = Depends(get_db)
@@ -1231,7 +1234,7 @@ def get_user_model_params(db: Session, user_id: int) -> dict:
     # 返回默认值
     return {"temperature": 0.7, "max_tokens": 2000, "top_p": 1.0}
 
-@app.get("/old/api/custom-models")
+@api_router.get("/api/custom-models")
 async def get_custom_models(
     current_user: User = Depends(get_current_user),
     db: Session = Depends(get_db)
@@ -1251,7 +1254,7 @@ async def get_custom_models(
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"获取模型列表失败: {str(e)}")
 
-@app.post("/old/api/custom-models")
+@api_router.post("/api/custom-models")
 async def create_custom_model(
     request: Request,
     current_user: User = Depends(get_current_user),
@@ -1306,7 +1309,7 @@ async def create_custom_model(
         db.rollback()
         raise HTTPException(status_code=500, detail=f"添加模型失败: {str(e)}")
 
-@app.put("/old/api/custom-models/{model_id}")
+@api_router.put("/api/custom-models/{model_id}")
 async def update_custom_model(
     model_id: int,
     request: Request,
@@ -1352,7 +1355,7 @@ async def update_custom_model(
         db.rollback()
         raise HTTPException(status_code=500, detail=f"更新模型失败: {str(e)}")
 
-@app.delete("/old/api/custom-models/{model_id}")
+@api_router.delete("/api/custom-models/{model_id}")
 async def delete_custom_model(
     model_id: int,
     current_user: User = Depends(get_current_user),
@@ -1381,7 +1384,7 @@ async def delete_custom_model(
         db.rollback()
         raise HTTPException(status_code=500, detail=f"删除模型失败: {str(e)}")
 
-@app.post("/old/api/custom-models/{model_id}/test")
+@api_router.post("/api/custom-models/{model_id}/test")
 async def test_custom_model(
     model_id: int,
     current_user: User = Depends(get_current_user),
@@ -1511,7 +1514,7 @@ AVATAR_MAX_SIZE = 5 * 1024 * 1024  # 5MB
 AVATAR_ALLOWED_TYPES = ["image/jpeg", "image/png", "image/gif", "image/webp"]
 AVATAR_SIZE = (200, 200)  # 头像压缩尺寸
 
-@app.post("/old/api/users/avatar/upload")
+@api_router.post("/api/users/avatar/upload")
 async def upload_avatar(
     request: Request,
     file: UploadFile = File(...),
@@ -1614,7 +1617,7 @@ async def upload_avatar(
         )
 
 
-@app.get("/old/api/users/avatar/{filename}")
+@api_router.get("/api/users/avatar/{filename}")
 async def get_avatar(filename: str):
     """
     获取用户头像（公开访问）
@@ -1638,7 +1641,7 @@ async def get_avatar(filename: str):
     return FileResponse(filepath, media_type="image/jpeg")
 
 
-@app.delete("/old/api/users/avatar")
+@api_router.delete("/api/users/avatar")
 async def delete_avatar(
     request: Request,
     current_user: User = Depends(get_current_user),
@@ -1678,7 +1681,7 @@ async def delete_avatar(
 # ========== 头像功能结束 ==========
 
 # Token验证端点
-@app.post("/old/api/auth/verify")
+@api_router.post("/api/auth/verify")
 async def verify_token(request: Request, db: Session = Depends(get_db)):
     """验证用户token的有效性
     
@@ -1729,7 +1732,7 @@ async def verify_token(request: Request, db: Session = Depends(get_db)):
         raise HTTPException(status_code=401, detail=f"Token验证失败: {str(e)}")
 
 # 文件上传API端点
-@app.post("/old/api/files/upload")
+@api_router.post("/api/files/upload")
 async def upload_file(
     request: Request,
     current_user: User = Depends(get_current_user),
@@ -1879,7 +1882,7 @@ async def upload_file(
         raise HTTPException(status_code=500, detail=f"上传过程中发生错误: {str(e)}")
 
 # 获取用户文件列表
-@app.get("/old/api/files", response_model=List[UserFileResponse])
+@api_router.get("/api/files", response_model=List[UserFileResponse])
 async def get_user_files(
     skip: int = 0,
     limit: int = 100,
@@ -1908,7 +1911,7 @@ async def get_user_files(
     return result
 
 # 下载文件
-@app.get("/old/api/files/{file_id}/download")
+@api_router.get("/api/files/{file_id}/download")
 async def download_file(
     file_id: int,
     current_user: User = Depends(get_current_user),
@@ -1979,7 +1982,7 @@ async def download_file(
                 pass  # 忽略删除错误
 
 # 删除文件
-@app.delete("/old/api/files/{file_id}")
+@api_router.delete("/api/files/{file_id}")
 async def delete_file(
     file_id: int,
     current_user: User = Depends(get_current_user),
@@ -2031,7 +2034,7 @@ def get_current_admin(current_user: User = Depends(get_current_user), db: Sessio
     return current_user
 
 # 管理员验证端点 - 用于登录后检查用户是否为管理员
-@app.get("/old/api/admin/verify", response_model=Dict[str, bool])
+@api_router.get("/api/admin/verify", response_model=Dict[str, bool])
 def verify_admin_role(
     current_user: User = Depends(get_current_user),
     db: Session = Depends(get_db)
@@ -2057,7 +2060,7 @@ def verify_admin_role(
         return {"is_admin": False}
 
 # 创建初始管理员（开发时使用）
-@app.post("/old/api/admin/init", response_model=Dict[str, str])
+@api_router.post("/api/admin/init", response_model=Dict[str, str])
 def init_admin(
     db: Session = Depends(get_db)
 ):
@@ -2090,7 +2093,7 @@ def init_admin(
         return {"message": f"创建失败: {str(e)}"}
 
 # 管理员仪表盘数据
-@app.get("/old/api/admin/dashboard", response_model=Dict[str, Any])
+@api_router.get("/api/admin/dashboard", response_model=Dict[str, Any])
 def admin_dashboard(
     current_admin: User = Depends(get_current_admin),
     db: Session = Depends(get_db)
@@ -2128,7 +2131,7 @@ def admin_dashboard(
     }
 
 # 获取所有用户列表
-@app.get("/old/api/admin/users", response_model=Dict[str, Any])
+@api_router.get("/api/admin/users", response_model=Dict[str, Any])
 def get_all_users(
     page: int = 1,
     page_size: int = 20,
@@ -2151,7 +2154,7 @@ def get_all_users(
     }
 
 # 获取所有文件列表
-@app.get("/old/api/admin/files", response_model=Dict[str, Any])
+@api_router.get("/api/admin/files", response_model=Dict[str, Any])
 def get_all_files(
     page: int = 1,
     page_size: int = 20,
@@ -2182,7 +2185,7 @@ def get_all_files(
     }
 
 # 删除用户
-@app.delete("/old/api/admin/users/{user_id}", response_model=Dict[str, Any])
+@api_router.delete("/api/admin/users/{user_id}", response_model=Dict[str, Any])
 def delete_user(
     user_id: int,
     current_admin: User = Depends(get_current_admin),
@@ -2713,7 +2716,7 @@ def init_database():
         db.close()
 
 # 用户认证相关API
-@app.post("/old/api/register/email", response_model=Dict[str, str])
+@api_router.post("/api/register/email", response_model=Dict[str, str])
 def register_email(request: VerifyCodeRequest, db: Session = Depends(get_db)):
     user = db.query(User).filter_by(email=request.email).first()
     if user:
@@ -2735,7 +2738,7 @@ def register_email(request: VerifyCodeRequest, db: Session = Depends(get_db)):
     else:
         raise HTTPException(status_code=400, detail="发送验证码失败！")
 
-@app.post("/old/api/register", response_model=Dict[str, Any])
+@api_router.post("/api/register", response_model=Dict[str, Any])
 def register(user_data: UserCreate, db: Session = Depends(get_db)):
     # 验证是否同意使用条款和隐私政策
     if not user_data.agree_terms:
@@ -2789,7 +2792,7 @@ def register(user_data: UserCreate, db: Session = Depends(get_db)):
         logger.error(f"注册失败: {str(e)}")
         raise HTTPException(status_code=500, detail="注册失败")
 
-@app.post("/old/api/login", response_model=Dict[str, Any])
+@api_router.post("/api/login", response_model=Dict[str, Any])
 def login(login_data: UserLogin, db: Session = Depends(get_db)):
     # 验证是否同意使用条款和隐私政策
     if not login_data.agree_terms:
@@ -2810,7 +2813,7 @@ def login(login_data: UserLogin, db: Session = Depends(get_db)):
 import os
 import shutil
 
-@app.delete("/old/api/delete-account", response_model=Dict[str, str])
+@api_router.delete("/api/delete-account", response_model=Dict[str, str])
 def delete_account(current_user: User = Depends(get_current_user), db: Session = Depends(get_db)):
     try:
         # 删除用户的云盘文件
@@ -2847,7 +2850,7 @@ def delete_account(current_user: User = Depends(get_current_user), db: Session =
 # 资源相关API
 
 # 聊天记录路由将在文件末尾导入以避免循环依赖
-@app.post("/old/api/resources", response_model=Dict[str, Any])
+@api_router.post("/api/resources", response_model=Dict[str, Any])
 def add_resource(resource_data: ResourceCreate, current_user: User = Depends(get_current_user), db: Session = Depends(get_db)):
     category = db.query(Category).filter_by(name=resource_data.category_name).first()
     if not category:
@@ -2883,7 +2886,7 @@ def add_resource(resource_data: ResourceCreate, current_user: User = Depends(get
         db.rollback()
         raise HTTPException(status_code=500, detail="添加资源失败")
 
-@app.get("/old/api/resources", response_model=Dict[str, List[Dict[str, Any]]])
+@api_router.get("/api/resources", response_model=Dict[str, List[Dict[str, Any]]])
 def get_all_resources(category_name: Optional[str] = None, current_user: User = Depends(get_current_user), db: Session = Depends(get_db)):
     # 获取用户收藏的资源ID列表
     favorite_resource_ids = db.query(UserFavorite.resource_id).filter_by(user_id=current_user.id).all()
@@ -2912,7 +2915,7 @@ def get_all_resources(category_name: Optional[str] = None, current_user: User = 
 
 
 
-@app.post("/old/api/favorites/remove", response_model=Dict[str, str])
+@api_router.post("/api/favorites/remove", response_model=Dict[str, str])
 async def remove_favorite(request: Request, current_user: User = Depends(get_current_user), db: Session = Depends(get_db)):
     data = await request.json()
     resource_id = data.get('resource_id')
@@ -2956,7 +2959,7 @@ async def remove_favorite(request: Request, current_user: User = Depends(get_cur
         raise HTTPException(status_code=500, detail="取消收藏失败")
 
 # 聊天相关API
-@app.post("/old/api/ask-stream")
+@api_router.post("/api/ask-stream")
 async def ask_question_stream(request: Request, current_user: User = Depends(get_current_user), db: Session = Depends(get_db)):
     data = await request.json()
     model = request.headers.get("model", "deepseek")
@@ -3489,7 +3492,7 @@ async def ask_question_stream(request: Request, current_user: User = Depends(get
         return StreamingResponse(generate(), media_type='text/plain')
 
 # 聊天记录相关API
-@app.post("/old/api/chat-records/save", response_model=Dict[str, Any])
+@api_router.post("/api/chat-records/save", response_model=Dict[str, Any])
 async def save_chat_record(request: Request, current_user: User = Depends(get_current_user), db: Session = Depends(get_db)):
     data = await request.json()
     user_id = str(current_user.id)  # 确保是字符串类型
@@ -3515,7 +3518,7 @@ async def save_chat_record(request: Request, current_user: User = Depends(get_cu
     
     return {"message": "聊天记录保存成功", "record": record}
 
-@app.get("/old/api/chat-records/sessions", response_model=Dict[str, List[Dict[str, Any]]])
+@api_router.get("/api/chat-records/sessions", response_model=Dict[str, List[Dict[str, Any]]])
 def get_chat_sessions(current_user: User = Depends(get_current_user), db: Session = Depends(get_db)):
     sessions = db.query(
         ChatRecord.session_id,
@@ -3542,7 +3545,7 @@ def get_chat_sessions(current_user: User = Depends(get_current_user), db: Sessio
     
     return {"sessions": result}
 
-@app.get("/old/api/chat-records/session/{session_id}", response_model=Dict[str, List[Dict[str, Any]]])
+@api_router.get("/api/chat-records/session/{session_id}", response_model=Dict[str, List[Dict[str, Any]]])
 def get_chat_session_messages(session_id: str, current_user: User = Depends(get_current_user), db: Session = Depends(get_db)):
     messages = db.query(ChatRecord).filter(
         ChatRecord.user_id == str(current_user.id),
@@ -3553,7 +3556,7 @@ def get_chat_session_messages(session_id: str, current_user: User = Depends(get_
     
     return {"messages": [message.to_dict() for message in messages]}
 
-@app.delete("/old/api/chat-records/session/{session_id}", response_model=Dict[str, str])
+@api_router.delete("/api/chat-records/session/{session_id}", response_model=Dict[str, str])
 def delete_chat_session(session_id: str, current_user: User = Depends(get_current_user), db: Session = Depends(get_db)):
     try:
         db.query(ChatRecord).filter(
@@ -3567,7 +3570,7 @@ def delete_chat_session(session_id: str, current_user: User = Depends(get_curren
         db.rollback()
         raise HTTPException(status_code=500, detail="删除失败")
 
-@app.post("/old/api/chat-records/new-session", response_model=Dict[str, str])
+@api_router.post("/api/chat-records/new-session", response_model=Dict[str, str])
 def create_new_chat_session(current_user: User = Depends(get_current_user)):
     session_id = str(uuid.uuid4()).replace("-", "")
     return {"session_id": session_id}
@@ -3576,7 +3579,7 @@ def create_new_chat_session(current_user: User = Depends(get_current_user)):
 from chat_records import get_current_admin_dependency
 
 # 测试邮箱验证端点（仅用于开发测试）
-@app.post("/old/api/test-email-validation", response_model=Dict[str, Any])
+@api_router.post("/api/test-email-validation", response_model=Dict[str, Any])
 def test_email_validation(
     request: dict,
     current_user: User = Depends(get_current_user)
@@ -3619,7 +3622,7 @@ def test_email_validation(
         }
 
 # 管理员创建用户API
-@app.post("/old/api/admin/create-user", response_model=Dict[str, Any])
+@api_router.post("/api/admin/create-user", response_model=Dict[str, Any])
 def admin_create_user(
     user_data: dict,
     db: Session = Depends(get_db),
@@ -3706,12 +3709,12 @@ def admin_create_user(
         db.rollback()
         raise HTTPException(status_code=500, detail=f"创建用户失败: {str(e)}")
 
-# 其他API@app.get("/old/api/get-resources", response_model=Dict[str, List[Dict[str, Any]]])
+# 其他API@api_router.get("/api/get-resources", response_model=Dict[str, List[Dict[str, Any]]])
 def get_resources(text: str, current_user: User = Depends(get_current_user), db: Session = Depends(get_db)):
     learning_resources = get_learning_resources(text, db)
     return {"resources": learning_resources}
 
-@app.get("/old/api/client-ip", response_model=Dict[str, str])
+@api_router.get("/api/client-ip", response_model=Dict[str, str])
 def get_client_ip(request: Request, current_user: User = Depends(get_current_user)):
     if request.headers.get('x-forwarded-for'):
         ip = request.headers.get('x-forwarded-for').split(',')[0].strip()
@@ -3720,7 +3723,7 @@ def get_client_ip(request: Request, current_user: User = Depends(get_current_use
     
     return {'ip': ip, 'version': 'IPv6' if ':' in ip else 'IPv4'}
 
-@app.get("/old/api/ipv6-test", response_model=Dict[str, List[Dict[str, Any]]])
+@api_router.get("/api/ipv6-test", response_model=Dict[str, List[Dict[str, Any]]])
 def ipv6_test(current_user: User = Depends(get_current_user), db: Session = Depends(get_db)):
     test_resources = db.query(Resource).limit(3).all()
     test_urls = [r.url for r in test_resources]
@@ -3759,11 +3762,11 @@ def ipv6_test(current_user: User = Depends(get_current_user), db: Session = Depe
     
     return {'tests': results}
 
-@app.get("/old/api/health", response_model=Dict[str, str])
+@api_router.get("/api/health", response_model=Dict[str, str])
 def health_check(current_user: User = Depends(get_current_user)):
     return {"status": "healthy", "message": "API服务正常"}
 
-@app.post("/old/api/forgot-password/email", response_model=Dict[str, str])
+@api_router.post("/api/forgot-password/email", response_model=Dict[str, str])
 def forgot_password_email(request: VerifyCodeRequest, db: Session = Depends(get_db)):
     user = db.query(User).filter_by(email=request.email).first()
     if not user:
@@ -3784,7 +3787,7 @@ def forgot_password_email(request: VerifyCodeRequest, db: Session = Depends(get_
     else:
         raise HTTPException(status_code=400, detail="发送验证码失败！")
 
-@app.post("/old/api/token", response_model=Dict[str, str])
+@api_router.post("/api/token", response_model=Dict[str, str])
 async def verify_token(request: Request):
     data = await request.json()
     token = data.get('token')
@@ -3794,7 +3797,7 @@ async def verify_token(request: Request):
     else:
         return {'res': 'success'}
 
-@app.post("/old/api/forgot-password", response_model=Dict[str, str])
+@api_router.post("/api/forgot-password", response_model=Dict[str, str])
 def forgot_password(request: ResetPasswordRequest, db: Session = Depends(get_db)):
     import logging
     logger = logging.getLogger(__name__)
@@ -3859,7 +3862,7 @@ def forgot_password(request: ResetPasswordRequest, db: Session = Depends(get_db)
         raise HTTPException(status_code=500, detail=f"密码重置失败，请稍后重试: {str(e)}")
 
 # 用户反馈系统API
-@app.post("/old/api/feedback", response_model=FeedbackResponse, summary="提交用户反馈")
+@api_router.post("/api/feedback", response_model=FeedbackResponse, summary="提交用户反馈")
 def submit_feedback(
     feedback_data: FeedbackCreate,
     current_user: User = Depends(get_current_user),
@@ -3902,7 +3905,7 @@ def submit_feedback(
         logger.error(f"提交反馈失败: {str(e)}")
         raise HTTPException(status_code=500, detail="提交反馈失败，请稍后重试")
 
-@app.get("/old/api/feedback", response_model=List[FeedbackResponse], summary="获取用户反馈列表")
+@api_router.get("/api/feedback", response_model=List[FeedbackResponse], summary="获取用户反馈列表")
 def get_user_feedbacks(
     skip: int = 0,
     limit: int = 10,
@@ -3923,7 +3926,7 @@ def get_user_feedbacks(
         .all()
     return feedbacks
 
-@app.get("/old/api/feedback/{feedback_id}", response_model=FeedbackResponse, summary="获取反馈详情")
+@api_router.get("/api/feedback/{feedback_id}", response_model=FeedbackResponse, summary="获取反馈详情")
 def get_feedback_detail(
     feedback_id: int,
     current_user: User = Depends(get_current_user),
@@ -3946,7 +3949,7 @@ def get_feedback_detail(
     return feedback
 
 # 管理员功能：获取所有反馈（需要管理员权限）
-@app.get("/old/api/admin/feedback", response_model=List[FeedbackResponse], summary="获取所有用户反馈")
+@api_router.get("/api/admin/feedback", response_model=List[FeedbackResponse], summary="获取所有用户反馈")
 def get_all_feedbacks(
     skip: int = 0,
     limit: int = 20,
@@ -3995,7 +3998,7 @@ def get_all_feedbacks(
     return result
 
 # 管理员功能：更新反馈状态
-@app.put("/old/api/admin/feedback/{feedback_id}", response_model=FeedbackResponse, summary="更新反馈状态")
+@api_router.put("/api/admin/feedback/{feedback_id}", response_model=FeedbackResponse, summary="更新反馈状态")
 def update_feedback_status(
     feedback_id: int,
     update_data: FeedbackUpdate,
@@ -4043,7 +4046,7 @@ def update_feedback_status(
         raise HTTPException(status_code=500, detail="更新反馈状态失败")
 
 # 管理员功能：删除反馈
-@app.delete("/old/api/admin/feedback/{feedback_id}", response_model=Dict[str, str], summary="删除反馈")
+@api_router.delete("/api/admin/feedback/{feedback_id}", response_model=Dict[str, str], summary="删除反馈")
 def delete_feedback(
     feedback_id: int,
     current_admin: User = Depends(get_current_admin),
@@ -4092,7 +4095,7 @@ def index():
 def test():
     return "服务器运行正常！测试端点工作正常。"
 
-@app.get("/old/api/resources/add")
+@api_router.get("/api/resources/add")
 def get_add_resource(current_user: User = Depends(get_current_user)):
     try:
         current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -4108,7 +4111,7 @@ def get_add_resource(current_user: User = Depends(get_current_user)):
     except:
         raise HTTPException(status_code=500, detail="服务器错误")
 
-@app.get("/old/api/resources/del")
+@api_router.get("/api/resources/del")
 def get_del_resource(current_user: User = Depends(get_current_user)):
     try:
         current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -4126,7 +4129,7 @@ def get_del_resource(current_user: User = Depends(get_current_user)):
 
 # 云盘相关API端点 - 完全重构
 # 1. 文件上传（支持多文件）
-@app.post("/old/api/cloud_disk/upload")
+@api_router.post("/api/cloud_disk/upload")
 async def upload_file(request: Request, db: Session = Depends(get_db), current_user: User = Depends(get_current_user)):
     logger.info(f"用户 {current_user.id} 尝试上传文件到云盘")
     
@@ -4283,7 +4286,7 @@ async def upload_file(request: Request, db: Session = Depends(get_db), current_u
         raise HTTPException(status_code=500, detail=f"上传过程中发生错误: {str(e)}")
 
 # 2. 获取用户文件列表
-@app.get("/old/api/cloud_disk/files")
+@api_router.get("/api/cloud_disk/files")
 async def get_files(user_id: int, db: Session = Depends(get_db), current_user: User = Depends(get_current_user)):
     # 确保用户只能访问自己的文件
     if current_user.id != user_id:
@@ -4416,7 +4419,7 @@ async def get_files(user_id: int, db: Session = Depends(get_db), current_user: U
     }
 
 # 3. 下载文件
-@app.get("/old/api/cloud_disk/download/{file_id}")
+@api_router.get("/api/cloud_disk/download/{file_id}")
 async def download_file(file_id: int, user_id: int, db: Session = Depends(get_db), current_user: User = Depends(get_current_user)):
     import logging
     logger = logging.getLogger(__name__)
@@ -4559,7 +4562,7 @@ async def download_file(file_id: int, user_id: int, db: Session = Depends(get_db
             pass  # 忽略删除错误
 
 # 3.5 更新文件内容（用于编辑功能）
-@app.post("/old/api/cloud_disk/update-file/{file_id}")
+@api_router.post("/api/cloud_disk/update-file/{file_id}")
 async def update_file_content(
     file_id: int,
     request: Request,
@@ -4651,7 +4654,7 @@ async def update_file_content(
         raise HTTPException(status_code=500, detail=f"文件更新失败: {str(e)}")
 
 # 4. 删除文件
-@app.delete("/old/api/cloud_disk/delete/{file_id}")
+@api_router.delete("/api/cloud_disk/delete/{file_id}")
 async def delete_file_cloud_disk(file_id: int, db: Session = Depends(get_db), current_user: User = Depends(get_current_user)):
     # 使用当前登录用户ID
     user_id = current_user.id
@@ -4683,7 +4686,7 @@ async def delete_file_cloud_disk(file_id: int, db: Session = Depends(get_db), cu
 # ===================== 文件夹管理 API =====================
 
 # 0. 初始化现有文件到根目录
-@app.post("/old/api/cloud_disk/init-folder-structure")
+@api_router.post("/api/cloud_disk/init-folder-structure")
 async def init_folder_structure(
     db: Session = Depends(get_db),
     current_user: User = Depends(get_current_user)
@@ -4713,7 +4716,7 @@ async def init_folder_structure(
         raise HTTPException(status_code=500, detail=f"初始化失败: {str(e)}")
 
 # 1. 获取文件夹树结构
-@app.get("/old/api/cloud_disk/folders")
+@api_router.get("/api/cloud_disk/folders")
 async def get_folder_structure(
     user_id: int,
     db: Session = Depends(get_db),
@@ -4749,7 +4752,7 @@ async def get_folder_structure(
     }
 
 # 2. 创建文件夹
-@app.post("/old/api/cloud_disk/create-folder")
+@api_router.post("/api/cloud_disk/create-folder")
 async def create_folder(
     request: Request,
     db: Session = Depends(get_db),
@@ -4801,7 +4804,7 @@ async def create_folder(
         raise HTTPException(status_code=500, detail=f"创建文件夹失败: {str(e)}")
 
 # 3. 删除文件夹
-@app.post("/old/api/cloud_disk/delete-folder")
+@api_router.post("/api/cloud_disk/delete-folder")
 async def delete_folder(
     request: Request,
     db: Session = Depends(get_db),
@@ -4882,7 +4885,7 @@ async def delete_folder(
         raise HTTPException(status_code=500, detail=f"文件夹删除失败: {str(e)}")
 
 # 4. 移动文件到文件夹
-@app.put("/old/api/cloud_disk/move-file")
+@api_router.put("/api/cloud_disk/move-file")
 async def move_file(
     request: Request,
     db: Session = Depends(get_db),
@@ -4924,7 +4927,7 @@ async def move_file(
         raise HTTPException(status_code=500, detail=f"文件移动失败: {str(e)}")
 
 # 5. 重命名文件夹
-@app.put("/old/api/cloud_disk/rename-folder")
+@api_router.put("/api/cloud_disk/rename-folder")
 async def rename_folder(
     request: Request,
     db: Session = Depends(get_db),
@@ -4967,7 +4970,7 @@ async def rename_folder(
         raise HTTPException(status_code=500, detail=f"文件夹重命名失败: {str(e)}")
 
 # 翻译相关API
-@app.post("/old/api/ask/translate")
+@api_router.post("/api/ask/translate")
 async def translate_text(
     request: Request,
     db: Session = Depends(get_db),
@@ -5020,7 +5023,7 @@ async def translate_text(
 
 # 笔记相关API
 # 1. 创建/更新笔记
-@app.post("/old/api/notes/save")
+@api_router.post("/api/notes/save")
 async def save_note(
     request: Request,
     db: Session = Depends(get_db),
@@ -5093,7 +5096,7 @@ async def save_note(
         raise HTTPException(status_code=500, detail=f"保存笔记失败: {str(e)}")
 
 # 2. 获取笔记列表
-@app.get("/old/api/notes/list")
+@api_router.get("/api/notes/list")
 async def get_notes(
     db: Session = Depends(get_db),
     current_user: User = Depends(get_current_user)
@@ -5108,7 +5111,7 @@ async def get_notes(
     }
 
 # 3. 获取笔记内容
-@app.get("/old/api/notes/{note_id}")
+@api_router.get("/api/notes/{note_id}")
 async def get_note(
     note_id: int,
     db: Session = Depends(get_db),
@@ -5140,7 +5143,7 @@ async def get_note(
         raise HTTPException(status_code=500, detail="读取笔记内容失败")
 
 # 4. 删除笔记
-@app.delete("/old/api/notes/{note_id}")
+@api_router.delete("/api/notes/{note_id}")
 async def delete_note(
     note_id: int,
     db: Session = Depends(get_db),
@@ -5171,7 +5174,7 @@ async def delete_note(
         raise HTTPException(status_code=500, detail=f"删除笔记失败: {str(e)}")
 
 # 5. 创建新文件
-@app.post("/old/api/cloud_disk/create_file")
+@api_router.post("/api/cloud_disk/create_file")
 async def create_new_file(
     request: Request,
     db: Session = Depends(get_db),
@@ -5252,7 +5255,7 @@ async def create_new_file(
         raise HTTPException(status_code=500, detail=f"创建文件失败: {str(e)}")
 
 # 云盘页面路由
-@app.get("/old/cloud_disk.html")
+@api_router.get("/cloud_disk.html")
 def get_cloud_disk():
     try:
         # 获取py目录的父目录（项目根目录）
@@ -5326,7 +5329,7 @@ register_all_routes()
 logger.info("API路由注册函数已调用")
 
 # 为admin.html添加专用路由，确保可以直接访问
-@app.get("/old/admin.html")
+@api_router.get("/admin.html")
 def get_admin_page():
     try:
         template_path = os.path.join(html_dir, "admin.html")
@@ -5355,7 +5358,7 @@ def get_admin_page_html_prefix():
         raise HTTPException(status_code=500, detail="服务器错误")
 
 # 云盘页面路由保持不变，确保兼容性
-@app.get("/old/cloud_disk.html")
+@api_router.get("/cloud_disk.html")
 def get_cloud_disk():
     try:
         template_path = os.path.join(html_dir, "cloud_disk.html")
@@ -5396,7 +5399,7 @@ class WordCardUpdate(BaseModel):
 async def get_remenber_page():
     return FileResponse(os.path.join(html_dir, "remenber.html"))
 
-@app.post("/old/api/words/batch")
+@api_router.post("/api/words/batch")
 async def batch_create_words(
     words: List[WordCardCreate],
     current_user: User = Depends(get_current_user),
@@ -5420,7 +5423,7 @@ async def batch_create_words(
     db.commit()
     return {"count": count}
 
-@app.get("/old/api/words")
+@api_router.get("/api/words")
 async def get_words(
     current_user: User = Depends(get_current_user),
     db: Session = Depends(get_db)
@@ -5428,7 +5431,7 @@ async def get_words(
     words = db.query(WordCard).filter_by(user_id=current_user.id).all()
     return [w.to_dict() for w in words]
 
-@app.delete("/old/api/words/{word_id}")
+@api_router.delete("/api/words/{word_id}")
 async def delete_word(
     word_id: int,
     current_user: User = Depends(get_current_user),
@@ -5440,7 +5443,7 @@ async def delete_word(
         db.commit()
     return {"success": True}
 
-@app.post("/old/api/words/{word_id}/rate")
+@api_router.post("/api/words/{word_id}/rate")
 async def rate_word(
     word_id: int,
     update: WordCardUpdate,
@@ -5470,3 +5473,7 @@ if __name__ == "__main__":# 启动应用
     import uvicorn
     # 监听 0.0.0.0 以同时支持 IPv4 和 IPv6 访问
     uvicorn.run(app, host="0.0.0.0", port=5001, log_level="info")
+
+
+# 注册 API 路由器
+app.include_router(api_router)
