@@ -1,4 +1,12 @@
-node_modules/ 
-.env 
-dist/ 
-.vscode/ 
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+env/
+.env
+.vscode/
+.idea/
+*.log
+Git常用命令.txt
