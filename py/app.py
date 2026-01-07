@@ -105,7 +105,8 @@ app = FastAPI(
 )
 
 # 定义 API 路由器，统一管理前缀
-api_router = APIRouter(prefix="/old")
+api_router = APIRouter(prefix="/old", redirect_slashes=False)
+app.include_router(api_router)
 
 # 请求体大小限制中间件（用于额外的检查和日志）
 class RequestSizeLimitMiddleware(BaseHTTPMiddleware):
@@ -5474,6 +5475,3 @@ if __name__ == "__main__":# 启动应用
     # 监听 0.0.0.0 以同时支持 IPv4 和 IPv6 访问
     uvicorn.run(app, host="0.0.0.0", port=5001, log_level="info")
 
-
-# 注册 API 路由器
-app.include_router(api_router)
