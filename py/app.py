@@ -5465,6 +5465,7 @@ async def rate_word(
     db.commit()
     return word.to_dict()
 
-if __name__ == "__main__":
+if __name__ == "__main__":# 启动应用
     import uvicorn
-    uvicorn.run(app, host="::", port=5001, log_level="info")
+    # 监听 0.0.0.0 以同时支持 IPv4 和 IPv6 访问
+    uvicorn.run(app, host="0.0.0.0", port=5001, log_level="info")
