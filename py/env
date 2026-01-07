@@ -1,4 +1,4 @@
-export DATABASE_URL='mysql+pymysql://ipv6_education:w4aGH8FWGMF4y4GA@localhost/ipv6_education'
+export DATABASE_URL='mysql+pymysql://i6:A6enbGFZykZrHGX7@localhost/i6'
 export JWT_SECRET_KEY='123456'
 export DEEPSEEK_API_KEY=密钥
 export DOUBAO_KEY=你的密钥
