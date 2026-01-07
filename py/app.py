@@ -4072,6 +4072,7 @@ def delete_feedback(
         raise HTTPException(status_code=500, detail="删除反馈失败")
 
 # 静态文件和页面路由
+@app.get("/old")
 @app.get("/")
 def index():
     try:
