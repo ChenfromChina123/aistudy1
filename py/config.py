@@ -17,10 +17,17 @@ class Settings:
     """应用配置类"""
     
     # ============ 数据库配置 ============
-    DATABASE_URL: str = os.getenv(
-        'DATABASE_URL',
-        'mysql+pymysql://root:123456@localhost/ipv6_education'
-    )
+    # 自动识别环境：Linux 认为是服务器 (使用 i6)，Windows 认为是本地 (使用现有配置)
+    @staticmethod
+    def _get_default_db_url():
+        import platform
+        # 服务器 i6 数据库配置
+        server_db = 'mysql+pymysql://i6:A6enbGFZykZrHGX7@localhost/i6'
+        # 本地现有数据库配置
+        local_db = 'mysql+pymysql://root:123456@localhost/ipv6_education'
+        return server_db if platform.system() == 'Linux' else local_db
+
+    DATABASE_URL: str = os.getenv('DATABASE_URL', _get_default_db_url.__func__())
     
     # ============ JWT配置 ============
     JWT_SECRET_KEY: str = os.getenv(
